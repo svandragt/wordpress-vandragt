@@ -25,8 +25,8 @@
 		<h2>Stay updated</h2>
 		<p>Around <?php echo vd_posts_per_month_count(); ?> entries per month.</p>
 		<ul class="plain">
-			<li><a href="/rss.xml">Posts feed</a></li> 
-			<li><a href="/snippets.xml">Snippets feed</a></li>
+			<li><a href="/rss.xml">Full posts feed</a></li> 
+			<li><a href="/snippets.xml">Status feed</a></li>
 			<li><a href="https://duckduckgo.com/?q=rss+via+email">Mailing list</a></li>
 		</ul> 
 
