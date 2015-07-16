@@ -1,0 +1,273 @@
+/*
+Theme Name: VanDragt.com
+Theme URI: https://github.com/svandragt/wordpress-basetheme
+Description: Theme for vandragt.com
+Author: pacifika (sander@vandragt.com)
+Author URI: http://vandragt.com/
+Version: 1.0
+Tags: white, one-column, reponsive, post-format
+
+License:  All rights reserved
+
+*/
+html {
+  background: #EBE7D7;
+}
+body {
+  color: #444;
+  margin: 0;
+  padding: 0 0 0;
+  line-height: 1.4em;
+  font-size: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+}
+a {
+  color: #008;
+}
+a:hover {
+  color: #04b;
+}
+article {
+  background: #fff;
+  padding: 0 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1px;
+  border-width: 1px 0;
+}
+article h2:first-child {
+  font-size: 200%;
+  color: #472615;
+  margin-top: 10px;
+}
+article:before {
+  content: "☰";
+  font-size: 30px;
+  margin-left: -85px;
+  margin-top: 20px;
+  float: left;
+}
+.meta {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 75%;
+  line-height: 2em;
+  padding: 0 10px 0 10px;
+  margin: 0 -10px;
+}
+.meta a {
+  color: inherit;
+  text-decoration: inherit;
+}
+article.link {
+  border-color: rgba(62, 35, 24, 0.5);
+}
+article.status {
+  border-color: rgba(191, 127, 51, 0.5);
+}
+article.status h2:first-child a {
+  font-size: 50%;
+  font-weight: bold;
+  float: left;
+  line-height: 1.5;
+  margin-right: 0.5em;
+}
+article.link:before {
+  content: "∞";
+}
+article.status:before {
+  content: "🍪";
+}
+blockquote {
+  font-style: italic;
+  border: 1px solid #eee;
+  border-width: 1px 0;
+}
+code {
+  background: #eee;
+  display: inline-block;
+  padding: 0 .25em;
+  margin: 0 0.25em;
+  border-radius: 1px;
+  border: 1px solid #ddd;
+  font-family: Consolas, monospace;
+  max-width: 100%;
+  border-radius: 2px;
+}
+code,
+pre {
+  white-space: pre-wrap;
+  font-family: Consolas,monospace;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  margin: 1em 0;
+  font-weight: bold;
+  line-height: 1.4em;
+}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+#nav a {
+  text-decoration: none;
+}
+#header {
+  overflow: auto;
+  text-align: center;
+  padding: 4% 4% 20px;
+  background-size: cover;
+}
+#header a {
+  line-height: 2;
+  display: inline-block;
+  margin-right: 1em;
+}
+#header h1 {
+  display: inline-block;
+  margin: 0;
+}
+#header a,
+h2 a {
+  text-decoration: none;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  color: #472615;
+  display: inline-block;
+}
+#header a:hover,
+#header a:focus,
+h2 a:hover,
+h2 a:focus {
+  opacity: 0.75;
+  color: #1a4e5e;
+}
+#nav {
+  display: inline-block;
+}
+#nav * {
+  display: inline;
+  margin: 0;
+}
+#nav ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+#nav li a {
+  margin-right: 1em;
+  display: inline-block;
+}
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+.plain,
+.plain ul,
+.plain li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.plain {
+  display: inline;
+}
+.plain li {
+  display: block;
+}
+.previousnext {
+  margin-top: -1px;
+  border-top: 1px solid #ccc;
+  padding: 4px 1em;
+  overflow: auto;
+}
+.previousnext > a {
+  float: right;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.previousnext > a:first-child {
+  float: left;
+}
+#content,
+#sidebar {
+  margin: 0;
+  display: block;
+}
+#sidebar {
+  padding: 0  10px 20px 40px;
+}
+.editlink {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+.editlink a {
+  color: #000;
+  background: #fff;
+  border-radius: 4px 0 0 4px;
+  padding: 4px;
+}
+.project-meta {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px #ffffff inset;
+  padding: 1%;
+  text-align: center;
+}
+.seriesmeta {
+  font-style: italic;
+}
+@media all and (min-width: 800px) {
+  article {
+    border-width: 0 0 0 60px;
+    margin: 0 0 1px 0;
+    padding: 10px 40px 20px;
+  }
+  #header a {
+    opacity: 0.75;
+  }
+  #header a:hover,
+  #header a:focus,
+  #header .current_page_item a {
+    opacity: 1;
+  }
+  .container #content,
+  .container #sidebar {
+    margin: 0 auto;
+    display: table-cell;
+  }
+  #content.single {
+    max-width: 55em;
+    display: block;
+    margin: 0 auto;
+  }
+  #sidebar,
+  #related {
+    background: #fff;
+  }
+  #sidebar {
+    width: 35%;
+    border-left: 1px solid #ccc;
+  }
+  #related {
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px 0;
+    font-size: 87.5%;
+  }
+  .meta {
+    margin: 30px -40px -20px;
+    padding: 0 10px 0 40px;
+  }
+}

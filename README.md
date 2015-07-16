@@ -1,2 +1,3 @@
-# wordpress-vandragt
-theme for vandragt.com
+wordpress-vandragt
+===================
+VanDragt.com theme

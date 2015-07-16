@@ -1,0 +1,1 @@
+    <p class="project-meta">Visit: <a href="<?php echo get_post_meta(get_the_ID(), 'wpcf-url', true); ?>"><?php $url = explode('//',get_post_meta(get_the_ID(), 'wpcf-url', true)); echo $url[1] ?></a></p>
