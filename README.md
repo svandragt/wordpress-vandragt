@@ -1,7 +1,5 @@
-wordpress-vandragt
-===================
-VanDragt.com theme
+wordpress-vandragt 2015
+=======================
+VanDragt.com theme.
 
 ![Screenshot](screenshot.png)
-
-test commit
