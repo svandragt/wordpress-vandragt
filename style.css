@@ -268,4 +268,7 @@ h2 a:focus {
     font-size: 87.5%;
   }
   .meta {
-    margin: 30px -40px 
+    margin: 30px -40px -20px;
+    padding: 0 10px 0 40px;
+  }
+}
