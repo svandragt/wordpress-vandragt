@@ -192,6 +192,7 @@ h2 a:focus {
   border-top: 1px solid #ccc;
   padding: 4px 1em;
   overflow: auto;
+  background: #fff;
 }
 .previousnext > a {
   float: right;
@@ -254,7 +255,7 @@ h2 a:focus {
   }
   #sidebar,
   #related {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.65);
   }
   #sidebar {
     width: 35%;
@@ -267,7 +268,4 @@ h2 a:focus {
     font-size: 87.5%;
   }
   .meta {
-    margin: 30px -40px -20px;
-    padding: 0 10px 0 40px;
-  }
-}
+    margin: 30px -40px 
