@@ -4,14 +4,14 @@ Theme URI: https://github.com/svandragt/wordpress-vandragt
 Description: Theme for vandragt.com
 Author: pacifika (sander@vandragt.com)
 Author URI: http://vandragt.com/
-Version: 2.0
+Version: 2.0.1
 Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved 
 
 */
 html {
-  background: #EBE7D7;
+  background: #D7EBEA;
 }
 body {
   color: #444;
@@ -265,4 +265,3 @@ h2 a:focus {
     margin: 30px -40px -20px;
     padding: 0 10px 0 40px;
   }
-}
