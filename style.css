@@ -32,10 +32,8 @@ a:hover {
 article {
   background: #fff;
   padding: 0 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   margin: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
   border-width: 1px 0;
 }
 article h2:first-child {
@@ -259,7 +257,6 @@ h2 a:focus {
   }
   #sidebar {
     width: 35%;
-    border-left: 1px solid #ccc;
   }
   #related {
     padding: 20px 40px;
