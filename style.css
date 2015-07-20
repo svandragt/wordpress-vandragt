@@ -11,7 +11,7 @@ License:  All rights reserved
 
 */
 html {
-  background: #D7EBEA;
+  background: #DFE7ED;
 }
 body {
   color: #444;
@@ -265,3 +265,4 @@ h2 a:focus {
     margin: 30px -40px -20px;
     padding: 0 10px 0 40px;
   }
+}
