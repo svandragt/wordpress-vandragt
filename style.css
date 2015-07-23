@@ -185,6 +185,9 @@ h2 a:focus {
 .previousnext > a:first-child {
   float: left;
 }
+.widget {
+  margin-bottom: 2em;
+}
 #content,
 #sidebar {
   margin: 0;
