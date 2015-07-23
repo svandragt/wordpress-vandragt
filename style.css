@@ -170,19 +170,6 @@ h2 a:focus {
   max-width: 75em;
   margin: 0 auto;
 }
-.plain,
-.plain ul,
-.plain li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.plain {
-  display: inline;
-}
-.plain li {
-  display: block;
-}
 .previousnext {
   margin-top: -1px;
   border-top: 1px solid #ccc;
@@ -205,6 +192,15 @@ h2 a:focus {
 }
 #sidebar {
   padding: 0  10px 20px 40px;
+}
+#sidebar ul,
+#sidebar li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#sidebar li {
+  display: block;
 }
 .editlink {
   position: fixed;
