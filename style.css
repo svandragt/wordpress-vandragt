@@ -110,14 +110,12 @@ h6 {
 }
 #header {
   overflow: auto;
-  text-align: center;
-  padding: 4% 4% 20px;
-  background-size: cover;
 }
 #header a {
   line-height: 2;
   display: inline-block;
   margin-right: 1em;
+  text-shadow: 0 1px #fff;
 }
 #header h1 {
   display: inline-block;
