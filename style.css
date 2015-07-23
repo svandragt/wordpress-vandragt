@@ -129,8 +129,9 @@ h2 a {
   -moz-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  color: #472615;
+  color: #222;
   display: inline-block;
+  font-weight: normal;
 }
 #header a:hover,
 #header a:focus,
