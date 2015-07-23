@@ -6,6 +6,26 @@ remove_action( 'wp_print_styles', 'print_emoji_styles' );
 // ADD POST FORMATS
 add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
 
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function vd_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => __( 'Home Right Sidebar', 'theme-slug' ),
+		'id'            => 'home_right_1',
+		'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'class'         => '',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'vd_widgets_init' );
+
 function vd_categoryposts2() {
 	# get the latest posts and group them by category
 	// 	$loops = vd_categoryposts2(); foreach ($loops as $category => $posts):
