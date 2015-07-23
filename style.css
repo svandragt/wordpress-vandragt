@@ -133,6 +133,7 @@ h2 a {
   display: inline-block;
   color: #222;
   font-weight: normal;
+  line-height: 4em;
 }
 #header a:hover,
 #header a:focus,
