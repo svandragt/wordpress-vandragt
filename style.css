@@ -118,6 +118,7 @@ h6 {
   display: inline-block;
   margin-right: 1em;
   text-shadow: 0 1px #fff;
+  line-height: 4em;
 }
 #header h1 {
   display: inline-block;
@@ -133,7 +134,6 @@ h2 a {
   display: inline-block;
   color: #222;
   font-weight: normal;
-  line-height: 4em;
 }
 #header a:hover,
 #header a:focus,
