@@ -32,8 +32,8 @@ add_action( 'widgets_init', 'vd_widgets_init' );
 function vd_root_categories($args) {
    echo $args['before_widget'];
    printf("%s%s%s", $args['before_title'], "Categories", $args['after_title']);
-   echo $args['after_widget'];
    printf("<ul>%s</ul>", wp_list_categories( 'title_li=&depth=1' ));
+   echo $args['after_widget'];
 }
 
 wp_register_sidebar_widget(
@@ -50,8 +50,8 @@ wp_register_sidebar_widget(
 function vd_post_volume($args) {
    echo $args['before_widget'];
    printf("%s%s%s", $args['before_title'], "Stay updated", $args['after_title']);
-   echo $args['after_widget'];
    printf("<p>Around %s entries per month.</p>", vd_posts_per_month_count());
+   echo $args['after_widget'];
 }
 
 wp_register_sidebar_widget(
