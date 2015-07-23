@@ -48,18 +48,6 @@ article:before {
   margin-top: 20px;
   float: left;
 }
-.meta {
-  font-style: italic;
-  opacity: 0.7;
-  font-size: 75%;
-  line-height: 2em;
-  padding: 0 10px 0 10px;
-  margin: 0 -10px;
-}
-.meta a {
-  color: inherit;
-  text-decoration: inherit;
-}
 article.link {
   border-color: rgba(62, 35, 24, 0.5);
 }
@@ -90,8 +78,9 @@ code {
   padding: 0 .25em;
   margin: 0 0.25em;
   border: 1px solid #ddd;
-  font-family: Consolas, monospace;
   max-width: 100%;
+  font-size: 12px;
+  line-height: 1.4em;
 }
 code,
 pre {
@@ -214,6 +203,18 @@ h2 a:focus {
   color: #000;
   background: #fff;
   padding: 4px;
+}
+.meta {
+  font-style: italic;
+  opacity: 0.7;
+  font-size: 75%;
+  line-height: 2em;
+  padding: 0 10px 0 10px;
+  margin: 0 -10px;
+}
+.meta a {
+  color: inherit;
+  text-decoration: inherit;
 }
 .project-meta {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px #ffffff inset;
