@@ -27,7 +27,7 @@ add_action( 'widgets_init', 'vd_widgets_init' );
 
 
 /**
- *  
+ * Root categories widget 
  */
 function vd_root_categories($args) {
    echo $args['before_widget'];
@@ -41,9 +41,28 @@ wp_register_sidebar_widget(
     'Root Categories',          // widget name
     'vd_root_categories',  // callback function
     array(                  // options
-        'description' => 'Description of what your widget does'
+        'description' => 'Display first level categories.'
     )
 );
+/**
+ * Post Volume widget 
+ */
+function vd_post_volume($args) {
+   echo $args['before_widget'];
+   printf("%s%s%s", $args['before_title'], "Stay updated", $args['after_title']);
+   echo $args['after_widget'];
+   printf("<p>Around %s entries per month.</p>", vd_posts_per_month_count());
+}
+
+wp_register_sidebar_widget(
+    'vd_post_volume',        // your unique widget id
+    'Post Volume',          // widget name
+    'vd_post_volume',  // callback function
+    array(                  // options
+        'description' => 'How often you post.'
+    )
+);
+
 
 
 function vd_categoryposts2() {
