@@ -25,6 +25,28 @@ function vd_widgets_init() {
 }
 add_action( 'widgets_init', 'vd_widgets_init' );
 
+
+/**
+ *  
+ */
+function vd_top_categories($args) {
+   echo $args['before_widget'];
+   echo $args['before_title'] . 'My Unique Widget' .  $args['after_title'];
+   echo $args['after_widget'];
+   // print some HTML for the widget to display here
+   echo "Your Widget Test";
+}
+
+wp_register_sidebar_widget(
+    'vd_top_categories',        // your unique widget id
+    'Root Categories',          // widget name
+    'vd_top_categories',  // callback function
+    array(                  // options
+        'description' => 'Description of what your widget does'
+    )
+);
+
+
 function vd_categoryposts2() {
 	# get the latest posts and group them by category
 	// 	$loops = vd_categoryposts2(); foreach ($loops as $category => $posts):
