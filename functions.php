@@ -50,7 +50,8 @@ wp_register_sidebar_widget(
 function vd_post_volume($args) {
    echo $args['before_widget'];
    printf("%s%s%s", $args['before_title'], "Stay updated", $args['after_title']);
-   printf("<p>Around %s entries per month.</p>", vd_posts_per_month_count());
+   $stats = vd_posts_volume_count();
+   printf("<p title='%s entries over %s months'>Around %s entries per month.</p>", $stats['total_entries'], $stats['total_months'], $stats['postvolume']);
    echo $args['after_widget'];
 }
 
@@ -201,11 +202,17 @@ function get_excerpt_by_id($post_id){
     return $the_excerpt;
 }
 
-function vd_posts_per_month_count($number_of_months = 6) {
+function vd_posts_volume_count($number_of_months = 6) {
 	$a = wp_get_archives('type=monthly&show_post_count=1&format=custom&echo=0&limit=' . $number_of_months); 
 	$entries = explode('&nbsp;', $a);
 	array_walk($entries, 'vd_post_count_from_entry');
-	return round(array_sum(array_filter($entries)) / $number_of_months);
+	$number_of_entries = array_sum(array_filter($entries));
+	$stats = array();
+
+	$stats['total_entries'] = $number_of_entries;
+	$stats['total_months'] = $number_of_months;
+	$stats['postvolume']  = round($number_of_entries / $number_of_months);
+	return $stats;
 }
 
 function vd_post_count_from_entry(&$item, $key)
