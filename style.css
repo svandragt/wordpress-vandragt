@@ -110,6 +110,7 @@ h6 {
 }
 #header {
   overflow: auto;
+  padding: 0 20px;
 }
 #header a {
   line-height: 2;
@@ -120,6 +121,9 @@ h6 {
 #header h1 {
   display: inline-block;
   margin: 0;
+}
+#header h1 a {
+  float: left;
 }
 #header a,
 h2 a {
