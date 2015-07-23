@@ -17,10 +17,6 @@
 	</div>
 
 	<div id="sidebar">
-		<h2>Categories</h2>
-		<ul class="plain">
-			<?php wp_list_categories( 'title_li=&depth=1' ); ?> 
-		</ul>
 
 		<h2>Stay updated</h2>
 		<p>Around <?php echo vd_posts_per_month_count(); ?> entries per month.</p>
