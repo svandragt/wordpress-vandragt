@@ -13,13 +13,12 @@ add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', '
 function vd_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __( 'Home Right Sidebar', 'theme-slug' ),
-		'id'            => 'home_right_1',
-		'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
-        'class'         => '',
-		'before_widget' => '<div>',
+		'name'          => __( 'Home Sidebar', 'theme-slug' ),
+		'id'            => 'home_1',
+		'description' => __( 'Widgets in this area will be shown on the homepage.', 'theme-slug' ),
+		'before_widget' => '<div class="widget">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
+		'before_title'  => '<h2>',
 		'after_title'   => '</h2>',
 	) );
 
