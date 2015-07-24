@@ -15,7 +15,6 @@ elements before ids before classes
 html {
   background: #DFE7ED;
   background-size: cover;
-  background-image: url(bg.jpg);
 }
 body {
   color: #444;
@@ -247,6 +246,9 @@ h2 a:focus {
   margin-bottom: 2em;
 }
 @media all and (min-width: 800px) {
+  html {
+    background-image: url(bg.jpg);
+  }
   article {
     padding: 10px 40px 20px;
     border: 0px solid #eee;
