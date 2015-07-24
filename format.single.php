@@ -9,5 +9,3 @@
 		get_template_part('format.date');
 	?>
 </article>
-
-<?php get_template_part('post_relatedposts'); ?>   
