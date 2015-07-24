@@ -261,10 +261,6 @@ h2 a:focus {
   .container #sidebar {
     display: table-cell;
   }
-  #content.single {
-    display: block;
-    margin: 0 auto;
-  }
   #content {
     width: 65%;
   }
