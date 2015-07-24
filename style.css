@@ -217,8 +217,7 @@ h2 a:focus {
   float: left;
 }
 .previousnext {
-  margin-top: -1px;
-  border-top: 1px solid #ccc;
+  margin-top: 1px;
   padding: 4px 1em;
   overflow: auto;
   background: #fff;
@@ -268,7 +267,7 @@ h2 a:focus {
   }
   #related {
     padding: 20px 40px;
-    margin: 60px 0;
+    margin: 60px 0 1px;
     font-size: 87.5%;
   }
   .meta {
