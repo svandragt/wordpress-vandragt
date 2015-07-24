@@ -40,9 +40,6 @@ article {
     padding: 0 10px;
     // box-shadow: 0 5px 10px rgba(0,0,0, 0.1);
     margin: 0;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-width: 1px 0;
-
 
     h2:first-child {
         font-size: 200%;
@@ -56,9 +53,9 @@ article {
 article:before {
     content: "☰"; 
     font-size: 30px;  
-    margin-left: -85px;
+    margin-right: -85px;
     margin-top: 20px;   
-    float:left;  
+    float: right;  
 } 
 
 article.link {
@@ -193,6 +190,7 @@ h2 a:focus {
 .container {
     max-width: 75em;
     margin: 0 auto; 
+    box-shadow: 0 0 1px #27455C;
 }
  
 .previousnext {
@@ -289,7 +287,7 @@ h2 a:focus {
 @media all and (min-width: 800px)  { 
 
     article {
-        border-width: 0 0 0 60px; 
+        border-width: 0 60px 0 0; 
         margin: 0 0 1px 0;
         padding: 10px 40px 20px; 
 
