@@ -10,6 +10,8 @@
 
 	    <?php get_template_part( 'comments' ); ?>
 	</div>
+
+	<?php get_template_part( 'sidebar' ); ?>
 </div>
  
 <?php get_footer(); ?>

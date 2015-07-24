@@ -16,14 +16,7 @@
 		</div>
 	</div>
 
-	<div id="sidebar">
-		<?php 
-		if ( is_active_sidebar( 'home_1' ) ) : 
-			dynamic_sidebar( 'home_1' ); 
-		endif; 
-		?>
-
-	</div>
+	<?php get_template_part( 'sidebar' ); ?>
 </div>
 
 <?php get_footer(); ?> 
