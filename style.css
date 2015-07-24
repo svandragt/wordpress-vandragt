@@ -34,7 +34,7 @@ a:hover {
 article {
   background: #fff;
   padding: 10px;
-  margin: 1px;
+  margin: 0 0 1px 0;
 }
 article h2:first-child {
   font-size: 200%;
