@@ -200,6 +200,7 @@ h2 a:focus {
   padding: 4px;
 }
 .meta {
+  max-width: none;
   text-align: right;
   opacity: 0.7;
   font-size: 75%;
