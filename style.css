@@ -205,7 +205,7 @@ h2 a:focus {
   opacity: 0.7;
   font-size: 75%;
   line-height: 2em;
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
   margin: 0 -10px;
 }
 .meta a {
@@ -277,6 +277,6 @@ h2 a:focus {
   }
   .meta {
     margin: 30px -40px -20px;
-    padding: 0 10px 0 40px;
+    padding: 0 40px;
   }
 }
