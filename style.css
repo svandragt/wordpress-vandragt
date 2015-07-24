@@ -31,8 +31,8 @@ a:hover {
 }
 article {
   background: #fff;
-  padding: 0 10px;
-  margin: 0;
+  padding: 10px;
+  margin: 1px;
 }
 article h2:first-child {
   font-size: 200%;
@@ -231,7 +231,6 @@ h2 a:focus {
 }
 @media all and (min-width: 800px) {
   article {
-    margin: 0 0 1px 0;
     padding: 10px 40px 20px;
     border: 0px solid #eee;
     border-right-width: 60px;
