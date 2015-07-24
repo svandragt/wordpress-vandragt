@@ -14,6 +14,8 @@ elements before ids before classes
 */
 html {
   background: #DFE7ED;
+  background-size: cover;
+  background-image: url(bg.jpg);
 }
 body {
   color: #444;
