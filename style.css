@@ -165,8 +165,9 @@ h2 a:focus {
 }
 #content,
 #sidebar {
-  margin: 0;
+  margin: 0 1px 0 0;
   display: block;
+  background: rgba(255, 255, 255, 0.65);
 }
 #content p {
   max-width: 35em;
@@ -185,10 +186,6 @@ h2 a:focus {
 }
 #sidebar li {
   display: block;
-}
-#sidebar,
-#related {
-  background: rgba(255, 255, 255, 0.65);
 }
 .container {
   max-width: 75em;

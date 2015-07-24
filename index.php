@@ -11,12 +11,13 @@
 			<p>Sorry, but you are looking for something that isn't here.</p>
 		</div>
 		<?php endif; ?>
-		<div class="previousnext">
-			<?php posts_nav_link('','&laquo; Newer','Older &raquo;'); ?>
-		</div>
 	</div>
 
 	<?php get_template_part( 'sidebar' ); ?>
+	<div class="previousnext">
+		<?php posts_nav_link('','&laquo; Newer','Older &raquo;'); ?>
+	</div>
+
 </div>
 
 <?php get_footer(); ?> 
