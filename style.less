@@ -9,6 +9,8 @@ Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved 
 
+elements before ids before classes
+
 */
 
 html {
@@ -187,39 +189,12 @@ h2 a:focus {
 
 }
 
-.container {
-    max-width: 75em;
-    margin: 0 auto 40px; 
-    box-shadow: 0 0 1px #27455C;
-}
- 
-.previousnext {
-    margin-top:-1px;
-    border-top: 1px solid #ccc; 
-    padding: 4px 1em;
-    overflow: auto;
-    background: #fff;
-
-    > a {
-        float:right;
-        text-decoration: none;
-        margin-bottom: 2px;
-    }
-    
-    > a:first-child {
-        float:left;
-    }
-
-}
-
-.widget {
-    margin-bottom: 2em;
-}
-
 #content, #sidebar {
     margin: 0;   
      display:block;   
 }
+
+
 
 #sidebar {
     padding: 0  10px 20px 40px;
@@ -237,7 +212,16 @@ h2 a:focus {
     }
 } 
 
- 
+#sidebar, #related {
+    background: rgba(255,255,255,0.65);
+}
+
+.container {
+    max-width: 75em;
+    margin: 0 auto 40px; 
+    box-shadow: 0 0 1px #27455C;
+}
+
 .editlink {
     position: fixed;
     top: 0;
@@ -268,22 +252,44 @@ h2 a:focus {
 
  
 }
+ 
+.previousnext {
+    margin-top:-1px;
+    border-top: 1px solid #ccc; 
+    padding: 4px 1em;
+    overflow: auto;
+    background: #fff;
 
+    > a {
+        float:right;
+        text-decoration: none;
+        margin-bottom: 2px;
+    }
+    
+    > a:first-child {
+        float:left;
+    }
 
+}
 
 .project-meta {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(255,255,255,1) inset;
     padding: 1%;
     text-align: center
 }
+
 .seriesmeta {
     font-style: italic;
+}
+
+.widget {
+    margin-bottom: 2em;
 }
 
 
 
 
-// desktop
+// ~desktop
 @media all and (min-width: 800px)  { 
 
     article {
@@ -314,10 +320,6 @@ h2 a:focus {
         display:block;
         margin: 0 auto;
     } 
-
-    #sidebar, #related {
-        background: rgba(255,255,255,0.65);
-    }
 
     #sidebar {
         width:35%;   

@@ -9,6 +9,8 @@ Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved 
 
+elements before ids before classes
+
 */
 html {
   background: #DFE7ED;
@@ -156,29 +158,6 @@ h2 a:focus {
   margin-right: 1em;
   display: inline-block;
 }
-.container {
-  max-width: 75em;
-  margin: 0 auto 40px;
-  box-shadow: 0 0 1px #27455C;
-}
-.previousnext {
-  margin-top: -1px;
-  border-top: 1px solid #ccc;
-  padding: 4px 1em;
-  overflow: auto;
-  background: #fff;
-}
-.previousnext > a {
-  float: right;
-  text-decoration: none;
-  margin-bottom: 2px;
-}
-.previousnext > a:first-child {
-  float: left;
-}
-.widget {
-  margin-bottom: 2em;
-}
 #content,
 #sidebar {
   margin: 0;
@@ -195,6 +174,15 @@ h2 a:focus {
 }
 #sidebar li {
   display: block;
+}
+#sidebar,
+#related {
+  background: rgba(255, 255, 255, 0.65);
+}
+.container {
+  max-width: 75em;
+  margin: 0 auto 40px;
+  box-shadow: 0 0 1px #27455C;
 }
 .editlink {
   position: fixed;
@@ -221,6 +209,21 @@ h2 a:focus {
 .meta a:first-child {
   float: left;
 }
+.previousnext {
+  margin-top: -1px;
+  border-top: 1px solid #ccc;
+  padding: 4px 1em;
+  overflow: auto;
+  background: #fff;
+}
+.previousnext > a {
+  float: right;
+  text-decoration: none;
+  margin-bottom: 2px;
+}
+.previousnext > a:first-child {
+  float: left;
+}
 .project-meta {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px #ffffff inset;
   padding: 1%;
@@ -228,6 +231,9 @@ h2 a:focus {
 }
 .seriesmeta {
   font-style: italic;
+}
+.widget {
+  margin-bottom: 2em;
 }
 @media all and (min-width: 800px) {
   article {
@@ -251,10 +257,6 @@ h2 a:focus {
     max-width: 55em;
     display: block;
     margin: 0 auto;
-  }
-  #sidebar,
-  #related {
-    background: rgba(255, 255, 255, 0.65);
   }
   #sidebar {
     width: 35%;
