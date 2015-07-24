@@ -44,9 +44,6 @@ article h2:first-child {
   color: #222;
   font-weight: normal;
 }
-article p {
-  max-width: 35em;
-}
 article:before {
   content: "☰";
   font-size: 30px;
@@ -92,6 +89,9 @@ code,
 pre {
   white-space: pre-wrap;
   font-family: Consolas,monospace;
+}
+dd {
+  margin-left: 0;
 }
 h1,
 h2,
@@ -168,6 +168,12 @@ h2 a:focus {
   margin: 0;
   display: block;
 }
+#content p {
+  max-width: 35em;
+}
+#content p.meta {
+  max-width: none;
+}
 #sidebar {
   padding: 0  10px 20px 40px;
 }
@@ -201,7 +207,6 @@ h2 a:focus {
   padding: 4px;
 }
 .meta {
-  max-width: none;
   text-align: right;
   opacity: 0.7;
   font-size: 75%;
