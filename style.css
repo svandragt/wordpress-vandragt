@@ -260,7 +260,6 @@ h2 a:focus {
     display: table-cell;
   }
   #content.single {
-    max-width: 55em;
     display: block;
     margin: 0 auto;
   }
