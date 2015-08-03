@@ -159,7 +159,7 @@ h2 a:focus {
 
 }
 
-#content, #sidebar {
+#content {
     margin: 0;   
      display:block;   
 }
@@ -174,27 +174,6 @@ h2 a:focus {
     }
 }
 
-
-
-#sidebar {
-    padding: 0  10px 20px 40px;
-
-
-    ul,
-    li {
-        padding:0;
-        margin:0;
-        list-style: none;
-    }
-
-    li {
-        display:block; 
-    }
-} 
-
-#sidebar, #related {
-    background: rgba(255,255,255,0.65);
-}
 
 .container {
     max-width: 75em;
@@ -234,29 +213,7 @@ h2 a:focus {
  
 }
  
-.previousnext {
-    margin:1px 0;
-    padding: 4px 1em;
-    overflow: auto;
-    background: #fff;
 
-    > a {
-        float:right;
-        text-decoration: none;
-        margin-bottom: 2px;
-    }
-    
-    > a:first-child {
-        float:left;
-    }
-
-}
-
-.project-meta {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 4px rgba(255,255,255,1) inset;
-    padding: 1%;
-    text-align: center
-}
 
 .seriesmeta {
     font-style: italic;
@@ -313,8 +270,8 @@ h2 a:focus {
 
     .container {
 
-        #content, 
-        #sidebar {
+        #content
+         {
             display:table-cell;   
         } 
     }
@@ -322,20 +279,10 @@ h2 a:focus {
 
 
     #content {
-        padding-right: 20px;
         width: 65%;
 
     }
 
-    #sidebar {
-        width:35%;   
-    } 
-
-    #related {
-        padding: 20px 40px;
-        margin: 1px 1px 0;
-        font-size:87.5%;
-    }
 
     .meta {
         margin: 30px -40px -20px;
