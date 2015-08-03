@@ -1,7 +1,7 @@
 <article class="format <?php echo get_post_format(); ?>">
 	<?php 
-	the_content('Read the rest of this entry &raquo;');
 	get_template_part( 'format.date', get_post_format() );
+	the_content('Read the rest of this entry &raquo;');
 	?>
 </article>
 

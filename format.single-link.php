@@ -4,7 +4,7 @@
 	</h2>
 
 	<?php 
-		the_content('Read the rest of this entry &raquo;');
 		get_template_part('format.date');
+		the_content('Read the rest of this entry &raquo;');
 	?>
 </article>

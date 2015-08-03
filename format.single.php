@@ -4,8 +4,8 @@
 	?></h2> 
 
 	<?php 
+		get_template_part('format.date');
 		the_content('Read the rest of this entry &raquo;');
 		get_template_part(get_post_type(), 'meta');
-		get_template_part('format.date');
 	?>
 </article>
