@@ -52,39 +52,6 @@ article {
 
 }
 
-article:before {
-    content: "☰"; 
-    font-size: 30px;  
-    margin-right: -120px;
-    margin-top: 20px;   
-    float: right;  
-    width: 2em;
-    text-align: center;
-} 
-
-article.link {
-    border-color: rgba(62, 35, 24, 0.5);
-}
-
-article.status { 
-    border-color: rgba(191, 127, 51, 0.5);
-
-    h2:first-child a {
-        font-size: 50%;
-        font-weight: bold;
-        float:left;
-        line-height: 1.5;
-        margin-right: 0.5em;
-    }
-
-}
-
-article.link:before {
-        content: "∞";
-}
-article.status:before {
-        content: "🍪";
-} 
 
 
 blockquote {
@@ -319,6 +286,41 @@ h2 a:focus {
         border-right-width: 60px;
         border-bottom-width: 1px;
     }
+
+    article:before {
+        content: "☰"; 
+        font-size: 30px;  
+        margin-right: -120px;
+        margin-top: 20px;   
+        float: right;  
+        width: 2em;
+        text-align: center;
+    } 
+
+    article.link {
+        border-color: rgba(62, 35, 24, 0.5);
+    }
+
+    article.status { 
+        border-color: rgba(191, 127, 51, 0.5);
+
+        h2:first-child a {
+            font-size: 50%;
+            font-weight: bold;
+            float:left;
+            line-height: 1.5;
+            margin-right: 0.5em;
+        }
+
+    }
+
+    article.link:before {
+            content: "∞";
+    }
+    article.status:before {
+            content: "🍪";
+    } 
+
  
     #header {
         a {
@@ -335,6 +337,7 @@ h2 a:focus {
 
     .container {
         border: 1px solid rgba(11, 41, 63, 0.57);
+        box-sizing: border-box;
 
         #content, 
         #sidebar {
