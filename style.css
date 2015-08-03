@@ -166,8 +166,6 @@ h2 a:focus {
   opacity: 0.7;
   font-size: 75%;
   line-height: 2em;
-  padding: 0 10px;
-  margin: 0 -10px;
 }
 .meta a {
   color: inherit;
@@ -183,7 +181,6 @@ h2 a:focus {
   article {
     padding: 30px 60px;
     border: 0px solid #eee;
-    border-top-width: 4px;
     margin-bottom: 20px;
   }
   article.link {
@@ -204,10 +201,11 @@ h2 a:focus {
     -moz-transition: background 0.5s ease-in-out;
     -o-transition: background 0.5s ease-in-out;
     transition: background 0.5s ease-in-out;
+    border-bottom: 4px solid #eee;
+    background: #efe;
     position: fixed;
     background: rgba(255, 255, 255, 0.8);
-    right: 0;
-    left: 0;
+    width: 65%;
     top: 0;
   }
   #header a {
@@ -226,9 +224,5 @@ h2 a:focus {
   }
   #content {
     width: 65%;
-  }
-  .meta {
-    margin: 30px -40px -20px;
-    padding: 0 40px;
   }
 }
