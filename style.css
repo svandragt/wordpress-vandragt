@@ -138,8 +138,11 @@ h2 a:focus {
   margin: 0;
   display: block;
 }
-#content p {
-  max-width: 35em;
+#content p,
+#content ul,
+#content ol,
+#content dl {
+  max-width: 55em;
 }
 #content p.meta {
   max-width: none;
@@ -217,9 +220,6 @@ h2 a:focus {
   margin-bottom: 2em;
 }
 @media all and (min-width: 800px) {
-  html {
-    background-image: url(bg.jpg);
-  }
   article {
     padding: 30px 60px;
     border: 0px solid #eee;
