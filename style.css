@@ -199,6 +199,10 @@ h2 a:focus {
     line-height: 1.5;
     margin-right: 0.5em;
   }
+  #header {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+  }
   #header a {
     opacity: 0.75;
   }
