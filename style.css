@@ -45,9 +45,11 @@ article h2:first-child {
 article:before {
   content: "☰";
   font-size: 30px;
-  margin-right: -85px;
+  margin-right: -120px;
   margin-top: 20px;
   float: right;
+  width: 2em;
+  text-align: center;
 }
 article.link {
   border-color: rgba(62, 35, 24, 0.5);
