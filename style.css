@@ -18,7 +18,7 @@ html {
 body {
   color: #444;
   margin: 0;
-  padding: 0 0 0;
+  padding: 0;
   line-height: 1.4em;
   font-size: 1em;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
@@ -140,7 +140,7 @@ h2 a:focus {
 .container {
   width: 100%;
   display: table;
-  margin: 5em auto 40px;
+  margin: 0 auto 40px;
 }
 .editlink {
   position: fixed;
@@ -214,6 +214,9 @@ h2 a:focus {
   #header a:focus,
   #header .current_page_item a {
     opacity: 1;
+  }
+  .container {
+    margin-top: 5em;
   }
   .container #content {
     display: table-cell;
