@@ -227,6 +227,7 @@ h2 a:focus {
     border: 0px solid #eee;
     border-top-width: 4px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   article.link {
     border-color: rgba(62, 35, 24, 0.5);
@@ -248,10 +249,6 @@ h2 a:focus {
   #header a:focus,
   #header .current_page_item a {
     opacity: 1;
-  }
-  .container {
-    border: 1px solid rgba(11, 41, 63, 0.57);
-    box-sizing: border-box;
   }
   .container #content,
   .container #sidebar {
