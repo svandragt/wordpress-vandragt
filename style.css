@@ -163,7 +163,6 @@ h2 a:focus {
   padding: 4px;
 }
 .meta {
-  text-align: right;
   opacity: 0.7;
   font-size: 75%;
   line-height: 2em;
@@ -173,9 +172,6 @@ h2 a:focus {
 .meta a {
   color: inherit;
   text-decoration: inherit;
-}
-.meta a:first-child {
-  float: left;
 }
 .seriesmeta {
   font-style: italic;
