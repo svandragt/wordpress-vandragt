@@ -16,7 +16,7 @@
 		</div>
 	</div>
 
-	<?php get_template_part( 'sidebar' ); ?>
+	<?php //get_template_part( 'sidebar' ); ?>
 </div>
 
 <?php get_footer(); ?> 

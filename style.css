@@ -13,8 +13,7 @@ elements before ids before classes
 
 */
 html {
-  background: #f3f7fa;
-  background-size: cover;
+  background: #fff;
 }
 body {
   color: #444;
@@ -32,7 +31,6 @@ a:hover {
   color: #04b;
 }
 article {
-  background: #fff;
   padding: 10px;
   margin: 0;
 }
@@ -227,7 +225,6 @@ h2 a:focus {
     border: 0px solid #eee;
     border-top-width: 4px;
     margin-bottom: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   article.link {
     border-color: rgba(62, 35, 24, 0.5);
