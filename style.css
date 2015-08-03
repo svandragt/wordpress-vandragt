@@ -223,19 +223,10 @@ h2 a:focus {
     background-image: url(bg.jpg);
   }
   article {
-    padding: 40px 60px;
+    padding: 30px 60px;
     border: 0px solid #eee;
-    border-right-width: 60px;
-    border-bottom-width: 1px;
-  }
-  article:before {
-    content: "☰";
-    font-size: 30px;
-    margin-right: -120px;
-    margin-top: 20px;
-    float: right;
-    width: 2em;
-    text-align: center;
+    border-top-width: 4px;
+    margin-bottom: 20px;
   }
   article.link {
     border-color: rgba(62, 35, 24, 0.5);
@@ -249,12 +240,6 @@ h2 a:focus {
     float: left;
     line-height: 1.5;
     margin-right: 0.5em;
-  }
-  article.link:before {
-    content: "∞";
-  }
-  article.status:before {
-    content: "🍪";
   }
   #header a {
     opacity: 0.75;
@@ -273,6 +258,7 @@ h2 a:focus {
     display: table-cell;
   }
   #content {
+    padding-right: 20px;
     width: 65%;
   }
   #sidebar {
