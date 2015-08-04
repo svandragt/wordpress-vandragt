@@ -11,6 +11,7 @@
   <?php wp_head(); ?>
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- WP-Minify CSS -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div id="header">
