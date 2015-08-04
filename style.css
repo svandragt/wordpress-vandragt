@@ -43,7 +43,7 @@ article h2:first-child {
   font-weight: normal;
 }
 article:last-child {
-  border-bottom: 0;
+  border-bottom: 0 !important;
 }
 blockquote {
   font-style: italic;
