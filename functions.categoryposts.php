@@ -1,5 +1,5 @@
 <?php
-
+add_shortcode( 'vd_category_posts', 'vd_categoryposts2' );
 
 function vd_categoryposts2($atts) {
 	# get the latest posts and group them by category
@@ -31,10 +31,9 @@ function vd_categoryposts2($atts) {
 	}
 
 	
-	return var_export($category_posts, true);
+	return $category_posts;
 }
 
-add_shortcode( 'vd_category_posts', 'vd_categoryposts2' );
 
 function vd_categoryposts() {
 	#  the last edited documents grouped by section ordered by max(document lastedited)?
