@@ -13,7 +13,7 @@ function vd_categoryposts2($atts) {
 
 
 	$posts = get_posts(array(
-		'posts_per_page' => get_option('posts_per_page')
+		// 'posts_per_page' => get_option('posts_per_page')
 	));
 	
 	$category_posts = array();
