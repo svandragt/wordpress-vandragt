@@ -34,7 +34,7 @@ function vd_categoryposts2($atts) {
 
 		printf("<h2>%s</h2><dl>", $category);
 		foreach ($posts as $post) {
-			printf("<dt>%s</dt><dd>%s</dd>", $post->post_title, get_excerpt_for_post($post));
+			printf("<dt><a href='%s'>%s</a></dt><dd>%s</dd>", get_the_permalink($post), $post->post_title, get_the_time('M j, Y', $post));
 			// get_template_part( 'format.single', get_post_format($post->ID) ); 
 			// var_dump($post);
 		}
