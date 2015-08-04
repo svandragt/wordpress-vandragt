@@ -30,13 +30,15 @@ function vd_categoryposts2($atts) {
 		}
 	}
 
-	foreach ($category_posts as $category => $posts) {
+	var_dump($category_posts);
 
-		printf("<h2>%s</h2>", $category);
-		foreach ($posts as $post) {
-			get_template_part( 'format.single', get_post_format($post->ID) ); 
-		}
-	}
+	// foreach ($category_posts as $category => $posts) {
+
+	// 	printf("<h2>%s</h2>", $category);
+	// 	foreach ($posts as $post) {
+	// 		get_template_part( 'format.single', get_post_format($post->ID) ); 
+	// 	}
+	// }
 
 	// $my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
 	// var_dump($my_query);
