@@ -35,7 +35,6 @@ function vd_categoryposts2($atts) {
 
 		printf("<h4>%s</h4>", $category);
 		foreach ($posts as $post) {
-			global $post;
 			setup_postdata( $post ); 
 			get_template_part( 'format.single', get_post_format($post->ID) ); 
 			// var_dump($post);
