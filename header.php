@@ -1,9 +1,4 @@
-<?php
-wp_deregister_script( 'admin-bar' );
-wp_deregister_style( 'admin-bar' );
-remove_action('wp_footer','wp_admin_bar_render',1000);
-remove_action('wp_head', '_admin_bar_bump_cb');
-?><!DOCTYPE html><html lang="<?php bloginfo('language'); ?>">
+<!DOCTYPE html><html lang="<?php bloginfo('language'); ?>">
 <head>
   <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
   <meta name="viewport" content="width=device-width">
@@ -16,7 +11,6 @@ remove_action('wp_head', '_admin_bar_bump_cb');
   <?php wp_head(); ?>
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- WP-Minify CSS -->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div id="header">
