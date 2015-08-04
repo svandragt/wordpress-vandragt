@@ -69,7 +69,7 @@ wp_register_sidebar_widget(
 
 
 
-function vd_categoryposts2() {
+function vd_categoryposts2($atts) {
 	# get the latest posts and group them by category
 	// 	$loops = vd_categoryposts2(); foreach ($loops as $category => $posts):
 	// 	printf("<h2>%s</h2>", get_the_category_by_ID( $category ));
@@ -97,8 +97,12 @@ function vd_categoryposts2() {
 			}
 		}
 	}
-	return $category_posts;
+
+	
+	return var_export($category_posts, true);
 }
+
+add_shortcode( 'vd_category_posts', 'vd_categoryposts2' );
 
 function vd_categoryposts() {
 	#  the last edited documents grouped by section ordered by max(document lastedited)?
