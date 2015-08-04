@@ -31,24 +31,15 @@ function vd_categoryposts2($atts) {
 		}
 	}
 
-	foreach ($category_posts as $category => $posts) {
 
+	foreach ($category_posts as $category => $posts) {
+		// TODO: rewrite using WP_Query and post__in argument to pass in post ids. this allows using get_template
 		printf("<h4>%s</h4>", $category);
 		foreach ($posts as $post) {
-			setup_postdata( $post ); 
-			get_template_part( 'format.single', get_post_format($post->ID) ); 
-			// var_dump($post);
+			printf("<div class='post'><h3><a href='%s'>%s</a> / %s</h3></div>", get_the_permalink($post), $post->post_title, get_the_time('M j, Y', $post));
 		}
 		print(PHP_EOL);
 	}
-
-	// $my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
-	// var_dump($my_query);
-	// while ( $my_query->have_posts() ) : $my_query->the_post();
-	// 	// get_template_part( 'format.single', get_post_format() ); 
-	// endwhile;
-
-	// return $category_posts;
 }
 
 
