@@ -35,7 +35,7 @@ function vd_categoryposts2($atts) {
 
 		printf("<h4>%s</h4>", $category);
 		foreach ($posts as $post) {
-			printf("<div class='post'><h3><a href='%s'>%s</a></h3>%s<p class='meta'>%s</p></div>", get_the_permalink($post), $post->post_title, get_excerpt_for_post($post), get_the_time('M j, Y', $post));
+			printf("<div class='post'><h3><a href='%s'>%s</a> / %s</h3></div>", get_the_permalink($post), $post->post_title, get_the_time('M j, Y', $post));
 			// get_template_part( 'format.single', get_post_format($post->ID) ); 
 			// var_dump($post);
 		}
