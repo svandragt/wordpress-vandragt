@@ -20,11 +20,11 @@ function vd_categoryposts2($atts) {
 	foreach ($posts as $post) {
 		$post_categories = get_the_category( $post->ID);
 		foreach ($post_categories as $post_category) {
-			if (!isset($category_posts[$post_category->cat_ID])) {
-				$category_posts[$post_category->cat_ID] = array();
+			if (!isset($category_posts[$post_category->name])) {
+				$category_posts[$post_category->name] = array();
 			}
-			if (count($category_posts[$post_category->cat_ID]) < 3) {
-			$category_posts[$post_category->cat_ID][] = $post;
+			if (count($category_posts[$post_category->name]) < 3) {
+			$category_posts[$post_category->name][] = $post;
 
 			}
 		}
@@ -32,13 +32,14 @@ function vd_categoryposts2($atts) {
 
 	var_dump($category_posts);
 
-	// foreach ($category_posts as $category => $posts) {
+	foreach ($category_posts as $category => $posts) {
 
-	// 	printf("<h2>%s</h2>", $category);
+		printf("<h2>%s</h2>", $category);
+		var_dump($posts);
 	// 	foreach ($posts as $post) {
 	// 		get_template_part( 'format.single', get_post_format($post->ID) ); 
 	// 	}
-	// }
+	}
 
 	// $my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
 	// var_dump($my_query);
