@@ -170,7 +170,6 @@ h2 a:focus {
   article {
     padding: 30px 0;
     border-bottom: 1px solid #eee;
-    margin-bottom: 20px;
   }
   article.link {
     border-color: rgba(62, 35, 24, 0.5);
@@ -216,7 +215,7 @@ h2 a:focus {
     opacity: 1;
   }
   .container {
-    margin-top: 5em;
+    margin-top: 4.25em;
   }
   .container #content {
     display: table-cell;
