@@ -35,8 +35,9 @@ function vd_categoryposts2($atts) {
 	}
 
 	$my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
+	var_dump($my_query);
 	while ( $my_query->have_posts() ) : $my_query->the_post();
-		get_template_part( 'format.single', get_post_format() ); 
+		// get_template_part( 'format.single', get_post_format() ); 
 	endwhile;
 
 	// return $category_posts;
