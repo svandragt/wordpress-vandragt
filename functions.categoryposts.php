@@ -33,13 +33,13 @@ function vd_categoryposts2($atts) {
 
 	foreach ($category_posts as $category => $posts) {
 
-		printf("<h3>%s</h3><dl>", $category);
+		printf("<h3>%s</h3>", $category);
 		foreach ($posts as $post) {
 			printf("<div class='post'><a href='%s'>%s</a><br>%s</div>", get_the_permalink($post), $post->post_title, get_the_time('M j, Y', $post));
 			// get_template_part( 'format.single', get_post_format($post->ID) ); 
 			// var_dump($post);
 		}
-		print('</dl>' . PHP_EOL);
+		print(PHP_EOL);
 	}
 
 	// $my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
