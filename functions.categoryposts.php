@@ -30,13 +30,11 @@ function vd_categoryposts2($atts) {
 		}
 	}
 
-	var_dump($category_posts);
-
 	foreach ($category_posts as $category => $posts) {
 
 		printf("<h2>%s</h2>", $category);
 		foreach ($posts as $post) {
-			echo '--------';
+			echo '--------' . $post->ID;
 			// get_template_part( 'format.single', get_post_format($post->ID) ); 
 			var_dump($post);
 		}
