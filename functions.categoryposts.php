@@ -30,8 +30,16 @@ function vd_categoryposts2($atts) {
 		}
 	}
 
-	
-	return $category_posts;
+	foreach ($category_posts as $post) {
+		# code...
+	}
+
+	$my_query = new WP_Query( 'posts_per_page=' . get_option('posts_per_page') );
+	while ( $my_query->have_posts() ) : $my_query->the_post();
+		get_template_part( 'format.single', get_post_format() ); 
+	endwhile;
+
+	// return $category_posts;
 }
 
 
