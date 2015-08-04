@@ -31,15 +31,19 @@ function vd_template_post_relatedposts() {
 		// var_dump($post);
 		$link =get_permalink($post->ID);
 		printf('<dt><a href="%s">%s</a></dt>',$link, $post->post_title);
-		printf('<dd>%s</dd>',get_excerpt_by_id($post->ID));
+		printf('<dd>%s</dd>',get_excerpt_for_post($post));
 
 	}
 }
 
-function get_excerpt_by_id($post_id){
+function get_excerpt_for_post($post){
 	// generate an except based on the first $excerpt_length number of words
 	
-    $the_post = get_post($post_id); //Gets post ID
+	if (is_integer($post)) {
+	    $the_post = get_post($post); //Gets post ID
+	} elseif (is_object($post)) {
+		$the_post = $post;
+	}
     $the_excerpt = $the_post->post_content; //Gets post_content to be used as a basis for the excerpt
     $excerpt_length = 35; //Sets excerpt length by word count
     $the_excerpt = strip_tags(strip_shortcodes($the_excerpt)); //Strips tags and images
