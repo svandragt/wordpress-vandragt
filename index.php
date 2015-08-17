@@ -11,6 +11,8 @@
 			<p>Sorry, but you are looking for something that isn't here.</p>
 		</div>
 		<?php endif; ?>
+
+		<p><a href="/archives">Archives, search</a></p>
 	</div>
 
 </div>
