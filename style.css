@@ -212,6 +212,16 @@ h2 a:focus {
   #header .current_page_item a {
     opacity: 1;
   }
+  .columns.three {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    columns: 3;
+  }
+  .columns.two {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    columns: 2;
+  }
   .container {
     margin-top: 4.25em;
   }
