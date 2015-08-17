@@ -41,9 +41,6 @@ article h2:first-child {
   color: #222;
   font-weight: normal;
 }
-article:last-child {
-  border-bottom: 0 !important;
-}
 blockquote {
   font-style: italic;
   border: 1px solid #eee;
