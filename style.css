@@ -111,6 +111,8 @@ h2 a {
   transition: opacity 0.25s ease-in-out;
   display: inline-block;
   color: #222;
+}
+#header a {
   font-weight: normal;
 }
 #header a:hover,
