@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="<?php bloginfo('language'); ?>">
 <head>
-  <title>!<?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+  <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- WP-Minify CSS -->
 </head>
-<body>
+<body> travis
   <div id="header">
     <h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo('name'); ?></a></h1>
     <div id="nav">
