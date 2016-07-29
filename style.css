@@ -4,7 +4,7 @@ Theme URI: https://github.com/svandragt/wordpress-vandragt
 Description: Theme for vandragt.com
 Author: pacifika (sander@vandragt.com)
 Author URI: http://vandragt.com/
-Version: 2.1.1
+Version: 2.1.2
 Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved 
@@ -21,7 +21,7 @@ body {
   color: #444;
   padding: 0;
   line-height: 1.25em;
-  font-size: 12px;
+  font-size: 13px;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif;
   min-height: 100%;
 }
