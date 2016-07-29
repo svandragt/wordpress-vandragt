@@ -12,7 +12,7 @@
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- WP-Minify CSS -->
 </head>
-<body> travis
+<body> travis werewewrwerwerwe
   <div id="header">
     <h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo('name'); ?></a></h1>
     <div id="nav">
