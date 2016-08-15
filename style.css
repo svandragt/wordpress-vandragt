@@ -148,6 +148,7 @@ h2 a:focus {
 }
 .editlink {
   position: fixed;
+  display: block;
   top: 0;
   right: 0;
 }
@@ -217,9 +218,6 @@ h2 a:focus {
     -moz-column-count: 2;
     -webkit-column-count: 2;
     columns: 2;
-  }
-  .container {
-    margin-top: 4.25em;
   }
   .container #content {
     display: table-cell;
