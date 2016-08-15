@@ -96,12 +96,13 @@ h6 {
   display: inline-block;
   margin-right: 1em;
   text-shadow: 0 1px #fff;
-  line-height: 4em;
+  line-height: 48px;
 }
 #header h1 {
   display: inline-block;
   margin: 0 2em 0 0;
   float: left;
+  font-size: 150%;
 }
 #header a,
 h2 a {
