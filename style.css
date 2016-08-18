@@ -195,22 +195,6 @@ h2 a {
     line-height: 1.5;
     margin-right: 0.5em;
   }
-  #header {
-    -webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out;
-    top: 0;
-    margin: 0 auto;
-  }
-  #header a {
-    opacity: 0.75;
-  }
-  #header a:hover,
-  #header a:focus,
-  #header .current_page_item a {
-    opacity: 1;
-  }
   .columns.three {
     -moz-column-count: 3;
     -webkit-column-count: 3;
