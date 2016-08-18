@@ -1,5 +1,5 @@
 /*
-Theme Name: wordpress-vandragt 2015 
+Theme Name: wordpress-vandragt 2015
 Theme URI: https://github.com/svandragt/wordpress-vandragt
 Description: Theme for vandragt.com
 Author: pacifika (sander@vandragt.com)
@@ -7,25 +7,24 @@ Author URI: http://vandragt.com/
 Version: 2.1.0
 Tags: white, two-column, reponsive, post-format
 
-License:  All rights reserved 
+License:  All rights reserved
 
 elements before ids before classes
 
 */
 
 html {
-    background: #fff;
+    background: rgb(255,255,191);
 }
- 
+
 body {
-    max-width: 45em;
     margin: 0 auto;
     color: #444;
     padding: 0;
     line-height: 1.5em;
     font-size: 14px;
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
-    min-height: 100%; 
+    min-height: 100%;
 }
 
 a {
@@ -37,17 +36,24 @@ a:hover {
 }
 
 article {
-    padding: 30px;  
+    padding: 30px;
     border-bottom: 0px solid #eee;
 
     h2:first-child {
-        font-size: 200%; 
+        font-size: 200%;
         margin: 10px 0;
         color:#222;
         font-weight: normal;
 
+        a {
+            color: #222;
+        }
     }
 
+}
+
+.article-footer {
+    padding: 0 30px;
 }
 
 article:last-child {
@@ -72,10 +78,10 @@ code {
     font-size:12px;
     line-height: 1.4em;
 
-} 
+}
 
 code,
-pre { 
+pre {
     white-space: pre-wrap;
     font-family: Consolas,monospace;
 }
@@ -83,7 +89,7 @@ pre {
 dd {
     margin-left:0;
 }
- 
+
 h1, h2, h3, h4, h5, h6 {
     font-size: 1em;
     margin: 2em 0 1em;
@@ -99,10 +105,11 @@ h3, h4, h5, h6 {
 
 #nav a {
     text-decoration: none;
-}  
+}
 
 #header {
-    border-bottom: 4px solid #eee;
+    background: rgb(217,62,44);
+    border-bottom: 4px solid rgb(255,183,53);
     overflow: auto;
     padding: 0 20px;
     z-index:1;
@@ -111,21 +118,22 @@ h3, h4, h5, h6 {
         line-height: 2;
         display: inline-block;
         margin-right: 1em;
-        text-shadow: 0 1px #fff;
         line-height: 48px;
-    } 
+        color: #fff;
+    }
 
     h1 {
         display: inline-block;
         margin:0 2em 0 0;
         float:left;
         font-size:150%;
+        font-weight:normal;
     }
 
 }
 
 
-#header a, 
+#header a,
 h2 a {
     text-decoration: none;
     -webkit-transition: opacity 0.25s ease-in-out;
@@ -133,16 +141,16 @@ h2 a {
     -o-transition     : opacity 0.25s ease-in-out;
     transition        : opacity 0.25s ease-in-out;
     display:inline-block;
-    color:#222;
 }
 
 
-#header a:hover, 
+#header a:hover,
 #header a:focus,
 h2 a:hover,
 h2 a:focus {
     opacity: 0.75;
     color: rgb(26, 78, 94);
+
 }
 
 
@@ -168,14 +176,17 @@ h2 a:focus {
 }
 
 #content {
-    margin: 0;   
-     display:block;   
+    background: #fff;
+    max-width: 45em;
+    margin: 2em auto;
+    border: 1px solid rgba(255,183,53, 0.2);
+    border-radius: 5px;
 }
 
 .container {
     width:100%;
     display: table;
-    margin: 0 auto 40px; 
+    margin: 0 auto 40px;
 }
 
 .editlink {
@@ -201,7 +212,7 @@ h2 a:focus {
     }
 
 }
- 
+
 
 
 .seriesmeta {
@@ -216,7 +227,7 @@ h2 a:focus {
 
 
 // ~desktop
-@media all and (min-width: 800px)  { 
+@media all and (min-width: 800px)  {
 
 
 
@@ -224,7 +235,7 @@ h2 a:focus {
         border-color: rgba(62, 35, 24, 0.5);
     }
 
-    article.status { 
+    article.status {
         border-color: rgba(191, 127, 51, 0.5);
 
         h2:first-child a {
@@ -243,21 +254,22 @@ h2 a:focus {
         -o-transition     : background 0.5s ease-in-out;
         transition        : background 0.5s ease-in-out;
 
-        background: rgba(255,255,255,0.9);
+
         top:0;
-        left:40px;
-        right:40px;
-        max-width:65em;
         margin: 0 auto;
         // position:fixed;
 
         a {
             opacity: 0.75;
         }
-    } 
+    }
 
     #header:hover {
         background: #fff;
+
+        a {
+            color: rgb(217,62,44);
+        }
     }
 
     #header a:hover,
@@ -278,19 +290,5 @@ h2 a:focus {
         columns:2;
     }
 
-    .container {
-
-        #content
-         {
-            display:table-cell;   
-        } 
-    }
-
-
-
-    #content {
-        width: 65%;
-
-    }
 
 }

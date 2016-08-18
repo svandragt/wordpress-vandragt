@@ -2,7 +2,7 @@
 
 <div class="container">
 	<div id="content" role="main" class="index">
-		<?php  
+		<?php
 		// todo group by category, then limit to only x per cat; keeping paging ok
 		if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php get_template_part( 'format.single', get_post_format() ); ?>
@@ -12,9 +12,9 @@
 		</div>
 		<?php endif; ?>
 
-		<p><a href="/archives">Archives, search</a></p>
+		<p class="article-footer"><a href="/archives">Archives, search</a></p>
 	</div>
 
 </div>
 
-<?php get_footer(); ?> 
+<?php get_footer(); ?>
