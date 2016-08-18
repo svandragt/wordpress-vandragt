@@ -20,6 +20,7 @@ elements before ids before classes
 @fgtoolbar: #fff;
 @accent: #594F4F;
 @accentlight: #FFEEBD;
+@link: #547980;
 
 html {
     background: @bg;
@@ -36,7 +37,10 @@ body {
 }
 
 a {
-    color: #008;
+    color: @link;
+    text-decoration: none;
+    font-weight:bold;
+
 }
 
 a:hover {

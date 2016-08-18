@@ -25,7 +25,9 @@ body {
   min-height: 100%;
 }
 a {
-  color: #008;
+  color: #547980;
+  text-decoration: none;
+  font-weight: bold;
 }
 a:hover {
   color: #04b;
