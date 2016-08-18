@@ -4,7 +4,7 @@ Theme URI: https://github.com/svandragt/wordpress-vandragt
 Description: Theme for vandragt.com
 Author: pacifika (sander@vandragt.com)
 Author URI: http://vandragt.com/
-Version: 2.1.0
+Version: 3.0.0
 Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved
@@ -13,8 +13,15 @@ elements before ids before classes
 
 */
 
+@bg: #E5FCC2;
+@border: #9DE0AD;
+@bar: #45ADA8;
+@barsh: #3D9B96;
+@fgtoolbar: #fff;
+@accent: #594F4F;
+
 html {
-    background: rgb(255,255,191);
+    background: @bg;
 }
 
 body {
@@ -36,31 +43,21 @@ a:hover {
 }
 
 article {
-    padding: 30px;
     border-bottom: 0px solid #eee;
+    margin-bottom:1em;
 
     h2:first-child {
         font-size: 200%;
         margin: 10px 0;
-        color:#222;
+        color:@accent;
         font-weight: normal;
 
         a {
-            color: #222;
+            color: @accent;
         }
     }
 
 }
-
-.article-footer {
-    padding: 0 30px;
-}
-
-article:last-child {
-    // border-bottom:0 !important;
-}
-
-
 
 blockquote {
     font-style: italic;
@@ -108,8 +105,8 @@ h3, h4, h5, h6 {
 }
 
 #header {
-    background: rgb(217,62,44);
-    border-bottom: 4px solid rgb(255,183,53);
+    background: @bar;
+    border-bottom: 4px solid @barsh;
     overflow: auto;
     padding: 0 20px;
     z-index:1;
@@ -178,15 +175,14 @@ h2 a:focus {
 #content {
     background: #fff;
     max-width: 45em;
-    margin: 2em auto;
-    border: 1px solid rgba(255,183,53, 0.2);
+    margin: 0 auto;
     border-radius: 5px;
+    padding: 30px;
 }
 
 .container {
-    width:100%;
     display: table;
-    margin: 0 auto 40px;
+    margin: 2em auto 40px;
 }
 
 .editlink {
@@ -205,6 +201,8 @@ h2 a:focus {
     font-size:75%;
     line-height:2em;
     color: #888;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom:1em;
 
     a {
         color: inherit;
