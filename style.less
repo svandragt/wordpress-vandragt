@@ -55,7 +55,7 @@ a:hover {
 }
 
 article {
-    border-bottom: 0px solid #eee;
+    border-bottom: 0px solid @bar;
     margin-bottom:4em;
 
     h2:first-child {
@@ -73,7 +73,7 @@ article {
 
 blockquote {
     font-style: italic;
-    border: 1px solid #eee;
+    border: 1px solid @bar;
     border-width: 1px 0;
 }
 
@@ -206,7 +206,7 @@ h2 a {
     font-size:75%;
     line-height:2em;
     color: #888;
-    border-bottom: 1px dotted #ccc;
+    border-bottom: 1px dotted @bar;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
 
@@ -235,12 +235,8 @@ h2 a {
 
 
 
-    article.link {
-        border-color: rgba(62, 35, 24, 0.5);
-    }
 
     article.status {
-        border-color: rgba(191, 127, 51, 0.5);
 
         h2:first-child a {
             font-size: 50%;

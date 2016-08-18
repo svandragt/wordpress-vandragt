@@ -38,7 +38,7 @@ a:hover {
   color: #04b;
 }
 article {
-  border-bottom: 0px solid #eee;
+  border-bottom: 0px solid #45ADA8;
   margin-bottom: 4em;
 }
 article h2:first-child {
@@ -52,7 +52,7 @@ article h2:first-child a {
 }
 blockquote {
   font-style: italic;
-  border: 1px solid #eee;
+  border: 1px solid #45ADA8;
   border-width: 1px 0;
 }
 code {
@@ -167,7 +167,7 @@ h2 a {
   font-size: 75%;
   line-height: 2em;
   color: #888;
-  border-bottom: 1px dotted #ccc;
+  border-bottom: 1px dotted #45ADA8;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
@@ -182,12 +182,6 @@ h2 a {
   margin-bottom: 2em;
 }
 @media all and (min-width: 800px) {
-  article.link {
-    border-color: rgba(62, 35, 24, 0.5);
-  }
-  article.status {
-    border-color: rgba(191, 127, 51, 0.5);
-  }
   article.status h2:first-child a {
     font-size: 50%;
     font-weight: bold;
