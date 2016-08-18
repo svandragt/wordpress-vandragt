@@ -160,8 +160,8 @@ h2 a {
   line-height: 2em;
   color: #888;
   border-bottom: 1px dotted #ccc;
-  padding-bottom: 1em;
-  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 .meta a {
   color: inherit;
