@@ -38,7 +38,7 @@ a:hover {
   color: #04b;
 }
 article {
-  border-bottom: 0px solid #45ADA8;
+  border-bottom: 0px solid #9DE0AD;
   margin-bottom: 4em;
 }
 article h2:first-child {
@@ -52,7 +52,7 @@ article h2:first-child a {
 }
 blockquote {
   font-style: italic;
-  border: 1px solid #45ADA8;
+  border: 1px solid #9DE0AD;
   border-width: 1px 0;
 }
 code {
@@ -167,7 +167,7 @@ h2 a {
   font-size: 75%;
   line-height: 2em;
   color: #888;
-  border-bottom: 1px dotted #45ADA8;
+  border-bottom: 1px dotted #9DE0AD;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
