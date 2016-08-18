@@ -102,7 +102,6 @@ h6 {
   overflow: auto;
   padding: 0 20px;
   z-index: 1;
-  text-align: center;
 }
 #header a {
   line-height: 2;
@@ -140,13 +139,13 @@ h2 a {
   margin: 0;
 }
 #nav li a {
-  margin-right: 1em;
+  margin-right: 0.5em;
+  padding: 0 0.5em;
   display: inline-block;
 }
 #content {
   max-width: 45em;
   margin: 0 auto;
-  border-radius: 5px;
   padding: 30px;
 }
 .container {
