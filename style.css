@@ -117,13 +117,6 @@ h2 a {
   transition: opacity 0.25s ease-in-out;
   display: inline-block;
 }
-#header a:hover,
-#header a:focus,
-h2 a:hover,
-h2 a:focus {
-  opacity: 0.75;
-  color: #1a4e5e;
-}
 #nav {
   display: inline-block;
 }
@@ -204,12 +197,6 @@ h2 a:focus {
   }
   #header a {
     opacity: 0.75;
-  }
-  #header:hover {
-    background: #fff;
-  }
-  #header:hover a {
-    color: #d93e2c;
   }
   #header a:hover,
   #header a:focus,
