@@ -95,14 +95,13 @@ h1, h2, h3, h4, h5, h6 {
     line-height:1.4em;
 }
 
+img {
+    border: 1px solid @accent;
+}
 
 
 h3, h4, h5, h6 {
     font-size: 100%;
-}
-
-.article img {
-    border: 1px solid @accent;
 }
 
 #nav a {
@@ -132,6 +131,18 @@ h3, h4, h5, h6 {
         font-weight:normal;
     }
 
+}
+
+
+// logo and article headers
+#header a,
+h2 a {
+    text-decoration: none;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    -moz-transition   : opacity 0.25s ease-in-out;
+    -o-transition     : opacity 0.25s ease-in-out;
+    transition        : opacity 0.25s ease-in-out;
+    display:inline-block;
 }
 
 

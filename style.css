@@ -77,14 +77,14 @@ h6 {
   font-weight: bold;
   line-height: 1.4em;
 }
+img {
+  border: 1px solid #594F4F;
+}
 h3,
 h4,
 h5,
 h6 {
   font-size: 100%;
-}
-.article img {
-  border: 1px solid #594F4F;
 }
 #nav a {
   text-decoration: none;
@@ -110,6 +110,15 @@ h6 {
   float: left;
   font-size: 150%;
   font-weight: normal;
+}
+#header a,
+h2 a {
+  text-decoration: none;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.25s ease-in-out;
+  -o-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
+  display: inline-block;
 }
 #nav {
   display: inline-block;
