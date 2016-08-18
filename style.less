@@ -19,6 +19,7 @@ elements before ids before classes
 @barsh: #3D9B96;
 @fgtoolbar: #fff;
 @accent: #594F4F;
+@accentlight: #FFEEBD;
 
 html {
     background: @bg;
@@ -66,11 +67,11 @@ blockquote {
 }
 
 code {
-    background: #eee;
+    background: @accent;
+    color: @accentlight;
     display: inline-block;
     padding: 0 .25em;
     margin: 0 0.25em;
-    border: 1px solid #ddd;
     max-width: 100%;
     font-size:12px;
     line-height: 1.4em;
@@ -100,6 +101,10 @@ h3, h4, h5, h6 {
     font-size: 100%;
 }
 
+.article img {
+    border: 1px solid @accent;
+}
+
 #nav a {
     text-decoration: none;
 }
@@ -127,17 +132,6 @@ h3, h4, h5, h6 {
         font-weight:normal;
     }
 
-}
-
-
-#header a,
-h2 a {
-    text-decoration: none;
-    -webkit-transition: opacity 0.25s ease-in-out;
-    -moz-transition   : opacity 0.25s ease-in-out;
-    -o-transition     : opacity 0.25s ease-in-out;
-    transition        : opacity 0.25s ease-in-out;
-    display:inline-block;
 }
 
 
