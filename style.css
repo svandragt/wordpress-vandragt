@@ -35,7 +35,7 @@ a {
   transition: color 0.25s ease-in-out;
 }
 a:hover {
-  color: #04b;
+  color: #4B6C73;
 }
 article {
   border-bottom: 0px solid #9DE0AD;
@@ -181,6 +181,15 @@ h2 a {
 }
 .widget {
   margin-bottom: 2em;
+}
+.more-link {
+  display: inline-block;
+  border: 1px solid #9DE0AD;
+  color: #547980;
+  padding: 0.5em 1em;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
 }
 @media all and (min-width: 800px) {
   article.status h2:first-child a {

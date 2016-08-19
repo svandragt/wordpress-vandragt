@@ -22,6 +22,7 @@ Palette http://www.colourlovers.com/palette/443995/i_demand_a_pancake
 @accent: #594F4F;
 @accentlight: #FFEEBD;
 @link: #547980;
+@link_dark: #4B6C73;
 
 html {
     background: @bg;
@@ -51,7 +52,7 @@ a {
 }
 
 a:hover {
-    color: #04b;
+    color: @link_dark;
 }
 
 article {
@@ -226,6 +227,17 @@ h2 a {
 
 .widget {
     margin-bottom: 2em;
+}
+
+.more-link {
+    display: inline-block;
+    border: 1px solid @border;
+    color: @link;
+    padding: 0.5em 1em;
+    text-align: left;
+    text-decoration: none;
+    font-weight:normal;
+
 }
 
 
