@@ -29,10 +29,7 @@ a {
   color: #547980;
   text-decoration: none;
   font-weight: bold;
-  -webkit-transition: color 0.25s ease-in-out;
-  -moz-transition: color 0.25s ease-in-out;
-  -o-transition: color 0.25s ease-in-out;
-  transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-out;
 }
 a:hover {
   color: #4B6C73;
@@ -99,6 +96,7 @@ h6 {
   text-decoration: none;
 }
 #header {
+  transition: background 1s ease-out;
   background: #45ADA8;
   border-bottom: 4px solid #3D9B96;
   overflow: auto;
@@ -117,15 +115,16 @@ h6 {
   margin: 0 2em 0 0;
   float: left;
   font-size: 150%;
+}
+#header h1 a {
   font-weight: normal;
+}
+#header:hover {
+  background: #3e9c97;
 }
 #header a,
 h2 a {
   text-decoration: none;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
   display: inline-block;
 }
 #nav {
@@ -184,6 +183,7 @@ h2 a {
   margin-bottom: 2em;
 }
 .more-link {
+  transition: background 0.25s ease-out;
   display: inline-block;
   border: 1px solid #9DE0AD;
   color: #547980;
@@ -192,31 +192,6 @@ h2 a {
   text-decoration: none;
   font-weight: normal;
 }
-@media all and (min-width: 800px) {
-  #header {
-    -webkit-transition: background 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out;
-    top: 0;
-    margin: 0 auto;
-  }
-  #header a {
-    opacity: 0.875;
-  }
-  #header a:hover,
-  #header a:focus,
-  #header .current_page_item a {
-    opacity: 1;
-  }
-  .columns.three {
-    -moz-column-count: 3;
-    -webkit-column-count: 3;
-    columns: 3;
-  }
-  .columns.two {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    columns: 2;
-  }
+.more-link:hover {
+  background: #9DE0AD;
 }

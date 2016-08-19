@@ -43,10 +43,7 @@ a {
     text-decoration: none;
     font-weight:bold;
 
-    -webkit-transition: color 0.25s ease-in-out;
-    -moz-transition   : color 0.25s ease-in-out;
-    -o-transition     : color 0.25s ease-in-out;
-    transition        : color 0.25s ease-in-out;
+    transition        : color 0.25s ease-out;
 
 
 }
@@ -123,6 +120,7 @@ h3, h4, h5, h6 {
 }
 
 #header {
+    transition        : background 1s ease-out;
     background: @bar;
     border-bottom: 4px solid @barsh;
     overflow: auto;
@@ -141,9 +139,16 @@ h3, h4, h5, h6 {
         margin:0 2em 0 0;
         float:left;
         font-size:150%;
-        font-weight:normal;
+
+        a {
+            font-weight: normal
+        }
     }
 
+
+}
+#header:hover {
+    background: shade(@bar, 10%);
 }
 
 
@@ -151,10 +156,6 @@ h3, h4, h5, h6 {
 #header a,
 h2 a {
     text-decoration: none;
-    -webkit-transition: opacity 0.25s ease-in-out;
-    -moz-transition   : opacity 0.25s ease-in-out;
-    -o-transition     : opacity 0.25s ease-in-out;
-    transition        : opacity 0.25s ease-in-out;
     display:inline-block;
 }
 
@@ -231,6 +232,7 @@ h2 a {
 }
 
 .more-link {
+    transition : background 0.25s ease-out;
     display: inline-block;
     border: 1px solid @border;
     color: @link;
@@ -241,58 +243,6 @@ h2 a {
 
 }
 
-
-
-
-// ~desktop
-@media all and (min-width: 800px)  {
-
-
-
-
-    // article.status {
-
-    //     h2:first-child a {
-    //         font-size: 50%;
-    //         font-weight: normal;
-    //         float:left;
-    //         line-height: 1.5;
-    //         margin-right: 0.5em;
-    //     }
-
-    // }
-
-    #header {
-        -webkit-transition: background 0.5s ease-in-out;
-        -moz-transition   : background 0.5s ease-in-out;
-        -o-transition     : background 0.5s ease-in-out;
-        transition        : background 0.5s ease-in-out;
-
-
-        top:0;
-        margin: 0 auto;
-
-        a {
-            opacity: 0.875;
-        }
-    }
-
-    #header a:hover,
-    #header a:focus,
-    #header .current_page_item a {
-        opacity: 1;
-    }
-
-    .columns.three {
-        -moz-column-count:3;
-        -webkit-column-count:3;
-        columns:3;
-    }
-    .columns.two {
-        -moz-column-count:2;
-        -webkit-column-count:2;
-        columns:2;
-    }
-
-
+.more-link:hover {
+     background: @border;
 }
