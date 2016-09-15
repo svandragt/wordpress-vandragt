@@ -14,7 +14,7 @@ elements before ids before classes
 Palette http://www.colourlovers.com/palette/443995/i_demand_a_pancake
 */
 html {
-  background: #E5FCC2;
+  background: #fff;
 }
 body {
   margin: 0 auto;
@@ -96,6 +96,10 @@ h6 {
   text-decoration: none;
 }
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: background 1s ease-out;
   background: #45ADA8;
   border-bottom: 4px solid #3D9B96;
