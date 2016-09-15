@@ -21,7 +21,7 @@ body {
   color: #444;
   padding: 0;
   line-height: 1.5em;
-  font-size: 14px;
+  font-size: 1rem;
   font-family: "Segoe UI", Helvetica, Arial, sans-serif;
   min-height: 100%;
 }
@@ -38,13 +38,13 @@ article {
   border-bottom: 0px solid #9DE0AD;
   margin-bottom: 4em;
 }
-article h2:first-child {
+article h2:first-of-type {
   font-size: 200%;
   margin: 10px 0;
   color: #594F4F;
   font-weight: normal;
 }
-article h2:first-child a {
+article h2:first-of-type a {
   color: #594F4F;
   font-weight: normal;
 }
