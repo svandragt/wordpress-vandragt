@@ -23,6 +23,7 @@ Palette http://www.colourlovers.com/palette/443995/i_demand_a_pancake
 @accentlight: #FFEEBD;
 @link: #547980;
 @link_dark: #4B6C73;
+@block_bg: #E5FCC2;
 
 html {
     background: @bg;
@@ -78,8 +79,6 @@ blockquote {
 }
 
 code {
-    background: @accent;
-    color: @accentlight;
     display: inline-block;
     padding: 0 .25em;
     margin: 0 0.25em;
@@ -91,6 +90,7 @@ code {
 
 code,
 pre {
+    background: @block_bg;
     white-space: pre-wrap;
     font-family: Consolas,monospace;
 }
@@ -113,6 +113,10 @@ img {
 
 h3, h4, h5, h6 {
     font-size: 100%;
+}
+
+pre {
+    padding: 1em;
 }
 
 #nav a {
