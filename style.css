@@ -13,7 +13,8 @@ elements before ids before classes
 
 Palette http://www.colourlovers.com/palette/443995/i_demand_a_pancake
 */
-html {
+html,
+#header {
   background: #f9f9f6;
 }
 body {
