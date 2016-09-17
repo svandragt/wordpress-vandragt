@@ -28,8 +28,6 @@ body {
 a {
   transition: all 0.25s ease-out;
   color: #f49711;
-  text-decoration: none;
-  font-weight: bold;
 }
 article {
   margin-bottom: 4em;
