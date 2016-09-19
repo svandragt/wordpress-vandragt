@@ -87,9 +87,14 @@ code {
 
 code,
 pre {
-    border: 1px solid @separator;
+    border: 1px solid @box;
+    border-radius: 10px;
     white-space: pre-wrap;
     font-family: Consolas,monospace;
+}
+
+pre code, code pre {
+    border:none;
 }
 
 dd {
@@ -145,7 +150,7 @@ pre {
         font-size:150%;
 
         a {
-            font-weight: normal
+            font-weight: 600;
         }
     }
 

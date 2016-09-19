@@ -60,9 +60,14 @@ code {
 }
 code,
 pre {
-  border: 1px solid #e5e5e2;
+  border: 1px solid #c9c9c6;
+  border-radius: 10px;
   white-space: pre-wrap;
   font-family: Consolas,monospace;
+}
+pre code,
+code pre {
+  border: none;
 }
 dd {
   margin-left: 0;
@@ -117,7 +122,7 @@ pre {
   font-size: 150%;
 }
 #header h1 a {
-  font-weight: normal;
+  font-weight: 600;
 }
 #header a,
 h2 a {
