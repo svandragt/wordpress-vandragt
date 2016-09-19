@@ -33,14 +33,21 @@ html, #header {
     background: @bg;
 }
 
+html {
+    display:flex;
+    flex-direction:column;
+    height:100%;
+}
 body {
     margin: 0 auto;
     color: @text;
-    padding: 0;
+    padding: 32px 0 0 0;
     line-height: 1.5em;
     font-size: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    min-height: 100%;
+        flex:1;
+    border-left:1px solid @box;
+
 }
 
 a {
@@ -53,13 +60,14 @@ article {
     margin-bottom:4em;
 
     h2:first-of-type {
-        font-size: 200%;
+        font-size: 150%;
         margin: 10px 0;
-        font-weight: normal;
+        font-weight: 600;
 
         a {
-            color: @checkmark_border;
-            font-weight: normal;
+            color: inherit;
+            font-weight: inherit;
+
         }
     }
 
@@ -92,6 +100,7 @@ pre {
     white-space: pre-wrap;
     font-family: Consolas,monospace;
 }
+
 
 pre code, code pre {
     border:none;
@@ -131,7 +140,7 @@ pre {
     left:0;
     right:0;
 
-    border-bottom: 1px solid @separator;
+    border-bottom: 1px solid @box;
     overflow: auto;
     padding: 0 20px;
     z-index:1;
@@ -194,6 +203,13 @@ h2 a {
     max-width: 45em;
     margin: 0 auto;
     padding: 30px;
+    border-left: 1px solid @box;
+    display:flex;
+    flex-direction: column;
+
+    > div {
+        flex:1;
+    }
 }
 
 .current_page_item
@@ -211,7 +227,7 @@ h2 a {
 
 .container {
     display: table;
-    margin: 2em auto 40px;
+    margin: 0 auto 40px;
 }
 
 .editlink {
@@ -230,13 +246,14 @@ h2 a {
     font-size:75%;
     line-height:2em;
     color: #888;
-    border-bottom: 1px dotted @separator;
+    text-align:center;
     padding-bottom: 0.5em;
     margin-bottom: 1em;
 
     a {
         color: inherit;
         text-decoration: inherit;
+        font-weight:600;
     }
 
 }
