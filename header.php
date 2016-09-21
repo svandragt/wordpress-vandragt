@@ -15,10 +15,11 @@
 <body>
   <div id="header">
     <h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo('name'); ?></a></h1>
-    <div id="nav">
-      <?php wp_page_menu(array(
-        'show_home'   => false,
-        ));  ?>
-        
-      </div>
-    </div>
+    <nav id="nav">
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'primary',
+					'menu_class'     => 'primary-menu',
+				 ) );
+			?>
+    </nav>

@@ -22,11 +22,18 @@ if (!is_admin()) {
 	remove_action('wp_head', '_admin_bar_bump_cb');
 }
 
-function vd_first_category_titles() { 
+function vd_first_category_titles() {
 	// return category titles
 	$titles = array();
-	foreach((get_the_category()) as $category) { 
-	    $titles[] = $category->cat_name . ' '; 
-	} 
+	foreach((get_the_category()) as $category) {
+	    $titles[] = $category->cat_name . ' ';
+	}
 	return implode(' and ', $titles);
 }
+
+
+// This theme uses wp_nav_menu() in two locations.
+	register_nav_menus( array(
+		'primary' => __( 'Primary Menu', 'vandragt' ),
+		// 'social'  => __( 'Social Links Menu', 'vandragt' ),
+	) );
