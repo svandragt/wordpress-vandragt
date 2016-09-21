@@ -157,10 +157,12 @@ h2 a {
   margin: 0 auto;
   padding: 30px;
 }
-.current_page_item a {
+.current_page_item a,
+.current_menu_item a {
   background: #faeba5;
 }
-.current_page_item a:hover {
+.current_page_item a:hover,
+.current_menu_item a:hover {
   background: #fadc74;
 }
 .container {
