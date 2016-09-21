@@ -158,11 +158,11 @@ h2 a {
   padding: 30px;
 }
 .current_page_item a,
-.current_menu_item a {
+.current-menu-item a {
   background: #faeba5;
 }
 .current_page_item a:hover,
-.current_menu_item a:hover {
+.current-menu-item a:hover {
   background: #fadc74;
 }
 .container {
