@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<?php // get_sidebar( 'home' ); ?>
+
+
 <div class="container">
 	<div id="content" role="main" class="index">
 		<?php
@@ -14,6 +17,8 @@
 
 		<p class="article-footer"><a href="/archives">Archives, search</a></p>
 	</div>
+
+
 
 </div>
 

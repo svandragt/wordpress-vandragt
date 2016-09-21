@@ -7,12 +7,42 @@
 function vd_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => __( 'Home Sidebar', 'theme-slug' ),
-		'id'            => 'home_1',
-		'description' => __( 'Widgets in this area will be shown on the homepage.', 'theme-slug' ),
-		'before_widget' => '<div class="widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2>',
+		'name'          => __( 'Frontpage Sidebar', 'theme-slug' ),
+		'id'            => 'frontpage-1',
+		'description' => __( 'Widgets in this area will be shown on the frontpage.', 'theme-slug' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Sidebar', 'twentysixteen' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentysixteen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Content Bottom 1', 'twentysixteen' ),
+		'id'            => 'sidebar-2',
+		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Content Bottom 2', 'twentysixteen' ),
+		'id'            => 'sidebar-3',
+		'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'twentysixteen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 
@@ -21,7 +51,7 @@ add_action( 'widgets_init', 'vd_widgets_init' );
 
 
 /**
- * Root categories widget 
+ * Root categories widget
  */
 function vd_root_categories($args) {
    echo $args['before_widget'];
@@ -39,7 +69,7 @@ wp_register_sidebar_widget(
     )
 );
 /**
- * Post Volume widget 
+ * Post Volume widget
  */
 function vd_post_volume($args) {
    echo $args['before_widget'];
@@ -59,7 +89,7 @@ wp_register_sidebar_widget(
 );
 
 function vd_posts_volume_count($number_of_months = 6) {
-	$a = wp_get_archives('type=monthly&show_post_count=1&format=custom&echo=0&limit=' . $number_of_months); 
+	$a = wp_get_archives('type=monthly&show_post_count=1&format=custom&echo=0&limit=' . $number_of_months);
 	$entries = explode('&nbsp;', $a);
 	array_walk($entries, 'vd_post_count_from_entry');
 	$number_of_entries = array_sum(array_filter($entries));
