@@ -11,6 +11,7 @@
   <?php wp_head(); ?>
   <link type="text/css" rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
   <!-- WP-Minify CSS -->
+  <meta name="95912bf4b466264c68a97a19f004f07fc9eb2558" content="69167b4b93905e89932bf8ab9c907f85e9d12ca9" />
 </head>
 <body>
   <div id="header">
