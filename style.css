@@ -15,7 +15,7 @@ Palette http://www.colourlovers.com/palette/443995/i_demand_a_pancake
 */
 html,
 #header {
-  background: #f9f9f6;
+  background: #f9f9f6 url(paper.jpg);
 }
 html {
   display: flex;
@@ -122,6 +122,7 @@ pre {
   margin-right: 1em;
   line-height: 48px;
   color: #363635;
+  text-shadow: 0px 1px 0px #fff;
 }
 #header h1 {
   display: inline-block;
@@ -185,6 +186,7 @@ h2 a {
   text-align: center;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
+  text-shadow: 0px 1px 0px #fff;
 }
 .meta a {
   color: inherit;
