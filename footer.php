@@ -1,5 +1,4 @@
 <?php //get_sidebar(); ?>
-<?php edit_post_link( 'Edit This', '<div class="editlink">', '</div>'); ?>
 <!-- WP-Minify JS -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
