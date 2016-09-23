@@ -51,9 +51,6 @@ article h2:first-of-type a {
   color: inherit;
   font-weight: inherit;
 }
-article:last-child {
-  border-bottom: 0;
-}
 blockquote {
   font-style: italic;
   border: 1px solid #c9c9c6;
