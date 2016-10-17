@@ -6,21 +6,22 @@ include_once('functions.relatedposts.php');
 
 // disable jetpack css
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
-
-// remove emojis
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
+// disable admin bar
+add_filter('show_admin_bar', '__return_false');
 
 // ADD POST FORMATS
-add_theme_support( 'post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio' ) );
-
-if (!is_admin()) {
-	// remove admin bar
-	wp_deregister_script( 'admin-bar' );
-	wp_deregister_style( 'admin-bar' );
-	remove_action('wp_footer','wp_admin_bar_render',1000);
-	remove_action('wp_head', '_admin_bar_bump_cb');
-}
+add_theme_support( 'post-formats',
+	array(
+		'aside',
+		'chat',
+		'gallery',
+		'image',
+		'link',
+		'quote',
+		'status',
+		'video',
+		'audio'
+	));
 
 function vd_first_category_titles() {
 	// return category titles
@@ -33,7 +34,7 @@ function vd_first_category_titles() {
 
 
 // This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'vandragt' ),
-		// 'social'  => __( 'Social Links Menu', 'vandragt' ),
-	) );
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'vandragt' ),
+	// 'social'  => __( 'Social Links Menu', 'vandragt' ),
+) );

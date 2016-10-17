@@ -1,22 +1,22 @@
 <?php
 add_shortcode( 'vd_category_posts', 'vd_categoryposts2' );
 
-function vd_categoryposts2($atts) {
+function vd_categoryposts2() {
 	# get the latest posts and group them by category
 	// 	$loops = vd_categoryposts2(); foreach ($loops as $category => $posts):
 	// 	printf("<h2>%s</h2>", get_the_category_by_ID( $category ));
 	// 	foreach ( $posts as $post ) : setup_postdata( $post );
 	// 		get_template_part( 'format.single', get_post_format() );
-	// 	endforeach; 
+	// 	endforeach;
 	// 	wp_reset_postdata();
-	// endforeach; 
+	// endforeach;
 
 
 	$posts = get_posts(array(
 		'posts_per_page' => 50,
 		'category' => -236
 	));
-	
+
 	$category_posts = array();
 	foreach ($posts as $post) {
 		$post_categories = get_the_category( $post->ID);
@@ -44,7 +44,7 @@ function vd_categoryposts2($atts) {
 
 
 function vd_categoryposts() {
-	#  the last edited documents grouped by section ordered by max(document lastedited)?
+	# the last edited documents grouped by section ordered by max(document lastedited)?
 	# get the categories
 	# for each category: get the latest post date
 	# order categories by latest post date
@@ -65,7 +65,7 @@ function vd_categoryposts() {
 		$last_post = array_pop(get_posts($args));
 		$category_dates[$category->cat_ID] = $last_post->post_date;
 	}
-	uasort($category_dates, "vd_sortByDate"); 
+	uasort($category_dates, "vd_sortByDate");
 
 	$category_queries = array();
 	foreach ($category_dates as $category => $category_date) {
