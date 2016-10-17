@@ -8,7 +8,6 @@
 			<?php
 				the_content('Continue reading &raquo;');
 			?>
-			</article>
 		</article>
 	</div>
 </div>
