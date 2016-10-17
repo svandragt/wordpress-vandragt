@@ -7,4 +7,5 @@
 	<?php
 		the_content('Continue reading &raquo;');
 	?>
+	<?php edit_post_link( 'Edit This', '<div class="editlink">', '</div>'); ?>
 </article>
