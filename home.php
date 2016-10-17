@@ -11,7 +11,7 @@
 	<div id="content" role="main" class="index">
 		<?php
 		// todo group by category, then limit to only x per cat; keeping paging ok
-		$category_posts = vd_posts_grouped_by_category();
+		$category_posts = vd_posts_grouped_by_category(true);
 		foreach ($category_posts as $category => $posts):
 			printf('<article class="format-list"><h2 class="category">%s</h2>',$category);
 			foreach ($posts as $post):

@@ -1,6 +1,6 @@
 <?php
 
-function vd_posts_grouped_by_category() {
+function vd_posts_grouped_by_category($single_category = false) {
 	// get the latest posts and group them by category
 
 
@@ -15,6 +15,9 @@ function vd_posts_grouped_by_category() {
 	foreach ($posts as $post) {
 		$post_categories = get_the_category( $post->ID);
 		foreach ($post_categories as $post_category) {
+			if ($post_categories[0] == $post_category && $single_category) {
+				continue;
+			}
 			if (!isset($category_posts[$post_category->name])) {
 				$category_posts[$post_category->name] = array();
 			}
