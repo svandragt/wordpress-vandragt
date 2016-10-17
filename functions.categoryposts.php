@@ -15,6 +15,7 @@ function vd_posts_grouped_by_category($single_category = false) {
 	foreach ($posts as $post) {
 		$post_categories = get_the_category( $post->ID);
 		foreach ($post_categories as $post_category) {
+			// skip multiple categories if disabled
 			if ($post_categories[0] !== $post_category && $single_category) {
 				continue;
 			}
