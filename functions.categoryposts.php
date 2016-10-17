@@ -7,7 +7,7 @@ function vd_posts_grouped_by_category($single_category = false) {
 	// get the last 50 posts
 	$posts = get_posts(array(
 		'posts_per_page' => 50,
-		'category' => -236
+		// 'category' => -236
 	));
 
 	// sort first 3 posts per category
