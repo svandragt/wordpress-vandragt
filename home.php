@@ -13,7 +13,10 @@
 		// todo group by category, then limit to only x per cat; keeping paging ok
 		$category_posts = vd_posts_grouped_by_category(true);
 		foreach ($category_posts as $category => $posts):
-			printf('<article class="format-list"><h2 class="category">%s</h2>',$category);
+			$category_id = get_cat_ID( $category);
+			$category_link = get_category_link( $category_id );
+			printf('<article class="format-list"><h2 class="category"><a href="%s">%s</a></h2>',$category_link,$category);
+
 			foreach ($posts as $post):
 				setup_postdata($post);
 				get_template_part( 'format.list', get_post_format() );
@@ -29,6 +32,4 @@
 
 </div>
 
-<?php get_footer(); ?>
-
-
+<?php get_footer();

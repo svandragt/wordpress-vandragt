@@ -1,3 +1,2 @@
-	<?php the_excerpt('Continue Reading &raquo;');?>
-
+<?php the_excerpt('Continue Reading &raquo;');?>
 
