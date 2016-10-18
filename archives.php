@@ -4,7 +4,6 @@ Template Name: Archives
 */
 get_header(); ?>
 
-<div class="container">
 	<div id="content" role="main" class="index">
 		<article class="index">
 
@@ -25,7 +24,5 @@ get_header(); ?>
 		</article>
 
 	</div>
-</div>
 
-<?php get_footer(); ?>
-
+<?php get_footer();

@@ -1,4 +1,6 @@
-<?php //get_sidebar(); ?>
+  <?php get_sidebar(); ?>
+</div>
+
 <!-- WP-Minify JS -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

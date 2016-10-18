@@ -4,10 +4,6 @@
     */
  get_header(); ?>
 
-<?php // get_sidebar( 'home' ); ?>
-
-
-<div class="container">
 	<div id="content" role="main" class="index">
 		<?php
 		// todo group by category, then limit to only x per cat; keeping paging ok
@@ -27,9 +23,5 @@
 
 		<p class="article-footer"><a href="/archives">Archives, search</a></p>
 	</div>
-
-
-
-</div>
 
 <?php get_footer();
