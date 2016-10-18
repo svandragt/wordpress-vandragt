@@ -39,6 +39,7 @@ body {
   flex: 1;
   order: 1;
   border-right: 1px solid #c9c9c6;
+  padding-top: 4em;
 }
 #content {
   flex: 2;
