@@ -6,7 +6,6 @@
 
 <aside id="secondary" class="sidebar widget-area" role="complementary">
 
-    <h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo('name'); ?></a></h1>
     <?php if ( is_active_sidebar( 'frontpage-1' ) && is_front_page()  ) : ?>
     		<?php dynamic_sidebar( 'frontpage-1' ); ?>
     <?php endif; ?>
