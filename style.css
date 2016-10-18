@@ -172,7 +172,8 @@ h2 a {
 }
 #menu-navigation {
   display: block;
-  margin: 0;
+  margin: 0 0 1em;
+  padding: 0;
 }
 #menu-navigation ul,
 #menu-navigation li {
