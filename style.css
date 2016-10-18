@@ -41,7 +41,6 @@ body {
   border-right: 1px solid #c9c9c6;
 }
 #content {
-  max-width: 45em;
   flex: 2;
   order: 2;
 }
