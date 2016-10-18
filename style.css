@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  max-width: 75em;
+  max-width: 60em;
 }
 #secondary {
   flex: 1;
@@ -45,7 +45,6 @@ body {
 #content {
   flex: 2;
   order: 2;
-  max-width: 45em;
 }
 body {
   margin: 0;
