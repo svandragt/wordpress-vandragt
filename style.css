@@ -40,6 +40,7 @@ body {
   order: 1;
   border-right: 1px solid #c9c9c6;
   padding-top: 4em;
+  min-width: 8em;
 }
 #content {
   flex: 2;
