@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php // get_sidebar( 'home' ); ?>
 
 
 <div class="container">
@@ -17,6 +16,7 @@
 
 		<p class="article-footer"><a href="/archives">Archives, search</a></p>
 	</div>
+	<?php get_sidebar( 'home' ); ?>
 
 
 
