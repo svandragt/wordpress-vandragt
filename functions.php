@@ -9,6 +9,10 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 // disable admin bar
 add_filter('show_admin_bar', '__return_false');
 
+// remove emojis
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
 // ADD POST FORMATS
 add_theme_support( 'post-formats',
 	array(
