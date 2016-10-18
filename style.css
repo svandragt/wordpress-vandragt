@@ -38,7 +38,6 @@ body {
 #secondary {
   flex: 1;
   order: 1;
-  padding: 1em;
   border-right: 1px solid #c9c9c6;
 }
 #content {
@@ -170,6 +169,22 @@ h2 a {
   margin-right: 0;
   padding: 0 0.5em;
   display: inline-block;
+}
+#menu-navigation {
+  display: block;
+  margin: 0;
+}
+#menu-navigation ul,
+#menu-navigation li {
+  list-style: none;
+  display: inline;
+}
+#menu-navigation a {
+  display: block;
+  width: 20em;
+  padding: 0 0.5em;
+  line-height: 3em;
+  text-decoration: none;
 }
 .article-footer {
   padding: 30px;
