@@ -64,7 +64,6 @@ article {
 }
 article h2:first-of-type {
   font-size: 150%;
-  margin: 0.5em 0 1.25em;
   font-weight: 800;
 }
 article h2:first-of-type a {
