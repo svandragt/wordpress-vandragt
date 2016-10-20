@@ -39,12 +39,13 @@ body {
   flex: 1;
   order: 1;
   border-right: 1px solid #c9c9c6;
-  padding-top: 4em;
+  padding-top: 5.5em;
   min-width: 8em;
 }
 #content {
   flex: 2;
   order: 2;
+  padding-top: 1em;
 }
 body {
   margin: 0;
