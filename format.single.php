@@ -10,5 +10,4 @@
 		get_template_part(get_post_type(), 'meta');
 	?>
 
-	 <?php edit_post_link( 'Edit This', '<div class="editlink">', '</div>'); ?>
 </article>

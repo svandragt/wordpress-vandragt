@@ -202,11 +202,6 @@ h2 a {
 .current-menu-item a:hover {
   background: #fadc74;
 }
-.editlink a {
-  color: #000;
-  background: #fff;
-  padding: 4px;
-}
 .meta {
   font-size: 75%;
   line-height: 2em;
