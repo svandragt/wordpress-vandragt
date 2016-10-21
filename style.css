@@ -90,8 +90,6 @@ code {
 }
 code,
 pre {
-  border: 1px solid #c9c9c6;
-  border-radius: 10px;
   white-space: pre-wrap;
   font-family: Consolas,monospace;
 }
