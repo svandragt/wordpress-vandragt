@@ -7,7 +7,7 @@ include_once('functions.relatedposts.php');
 // disable jetpack css
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 // disable admin bar
-add_filter('show_admin_bar', '__return_false');
+// add_filter('show_admin_bar', '__return_false');
 
 // remove emojis
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -41,13 +41,6 @@ function vd_first_category_titles() {
 	}
 	return implode(' and ', $titles);
 }
-
-function vd_save_post( $post_id ) {
-	// detect post format (including standard!)
-	$format = get_post_format() ? : 'standard';
-	update_post_meta($post_id, '_post_format', $format);
-}
-add_action( 'save_post', 'vd_save_post' );
 
 
 // This theme uses wp_nav_menu() in two locations.
