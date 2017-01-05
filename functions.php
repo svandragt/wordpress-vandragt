@@ -42,6 +42,13 @@ function vd_first_category_titles() {
 	return implode(' and ', $titles);
 }
 
+function vd_save_post( $post_id ) {
+	// detect post format (including standard!)
+	$format = get_post_format() ? : 'standard';
+	update_post_meta($post_id, '_post_format', $format);
+}
+add_action( 'save_post', 'vd_save_post' );
+
 
 // This theme uses wp_nav_menu() in two locations.
 register_nav_menus( array(
