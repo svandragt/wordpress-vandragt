@@ -48,3 +48,21 @@ register_nav_menus( array(
 	'primary' => __( 'Primary Menu', 'vandragt' ),
 	// 'social'  => __( 'Social Links Menu', 'vandragt' ),
 ) );
+
+
+define('VDSPF_POST_FORMAT', 'vdspf_post_format');
+
+function vdspf_update_post_format( $post_id ) {
+	// detect post format (including standard!)
+	$format = get_post_format() ? : 'standard';
+	update_post_meta($post_id, VDSPF_POST_FORMAT , $format);
+}
+add_action( 'save_post', 'vdspf_update_post_format' );
+
+function exclude_category( $query ) {
+    if ( $query->is_home() && $query->is_main_query() ) {
+        var_dump($query->query_vars);
+    }
+
+}
+add_action( 'pre_get_posts', 'vdspf_exclude_nonstandard_format' );
