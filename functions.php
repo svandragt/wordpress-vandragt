@@ -59,7 +59,7 @@ function vdspf_update_post_format( $post_id ) {
 }
 add_action( 'save_post', 'vdspf_update_post_format' );
 
-function exclude_category( $query ) {
+function vdspf_exclude_nonstandard_format( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
         var_dump($query->query_vars);
     }
