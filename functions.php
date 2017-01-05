@@ -50,6 +50,8 @@ register_nav_menus( array(
 ) );
 
 
+
+// TODO: make this its own plugin
 define('VDSPF_POST_FORMAT', 'vdspf_post_format');
 
 function vdspf_update_post_format( $post_id ) {
