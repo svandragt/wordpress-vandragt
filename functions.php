@@ -61,7 +61,8 @@ add_action( 'save_post', 'vdspf_update_post_format' );
 
 function vdspf_exclude_nonstandard_format( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-        var_dump($query->query_vars);
+       $query->set( 'meta_key', VDSPF_POST_FORMAT);
+	   $query->set( 'meta_value', 'standard' );
     }
 
 }
