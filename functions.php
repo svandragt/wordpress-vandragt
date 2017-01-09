@@ -59,27 +59,14 @@ function vdspf_update_post_format( $post_id ) {
 	$format = get_post_format() ? : 'standard';
 	update_post_meta($post_id, VDSPF_POST_FORMAT , $format);
 
-
-	// Set category to status if post_format is status (used by feeds)
-	if ( ! wp_is_post_revision( $post_id ) ) {
-
-		// unhook this function so it doesn't loop infinitely
-		remove_action('save_post', __FUNCTION__);
-
-		if ($format == 'status') {
-			// update the post, which calls save_post again
-			$my_post = array(
-		      'ID'          	=> $post_id,
-			  'post_category'   => array($format),
-			);
-			wp_update_post( $my_post, true );
-		}
-
-		// re-hook this function
-		add_action('save_post', __FUNCTION__);
+	if ($format == 'status') {
+		// update the post, which calls save_post again
+		$my_post = array(
+	      'ID'          	=> $post_id,
+		  'post_category'   => array($format),
+		);
+		wp_update_post( $my_post );
 	}
-
-
 }
 add_action( 'save_post', 'vdspf_update_post_format' );
 
