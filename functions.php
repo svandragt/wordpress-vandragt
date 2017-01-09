@@ -70,7 +70,7 @@ function vdspf_update_post_format( $post_id ) {
 			// update the post, which calls save_post again
 			$my_post = array(
 		      'ID'          	=> $post_id,
-			  'post_category'   => $format,
+			  'post_category'   => array($format),
 			);
 			wp_update_post( $my_post );
 		}
