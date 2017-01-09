@@ -72,7 +72,7 @@ function vdspf_update_post_format( $post_id ) {
 		      'ID'          	=> $post_id,
 			  'post_category'   => array($format),
 			);
-			wp_update_post( $my_post );
+			wp_update_post( $my_post, true );
 		}
 
 		// re-hook this function
