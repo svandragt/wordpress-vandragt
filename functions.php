@@ -3,6 +3,7 @@
 include_once('functions.categoryposts.php');
 include_once('functions.widgets.php');
 include_once('functions.relatedposts.php');
+include_once('vd_consolidate_post_format.php');
 
 // disable jetpack css
 add_filter( 'jetpack_implode_frontend_css', '__return_false' );
@@ -51,13 +52,8 @@ register_nav_menus( array(
 
 
 
-// TODO: make this its own plugin
-define('VDSPF_POST_FORMAT', 'vdspf_post_format');
-
 function vdspf_update_post_format( $post_id ) {
-	// Save post category with standard fallback
-	$format = get_post_format() ? : 'standard';
-	update_post_meta($post_id, VDSPF_POST_FORMAT , $format);
+
 
 
 	// Set category to status if post_format is status (used by feeds)
@@ -85,8 +81,7 @@ add_action( 'save_post', 'vdspf_update_post_format' );
 
 function vdspf_exclude_nonstandard_format( $query ) {
     if ( $query->is_home() && $query->is_main_query() ) {
-       $query->set( 'meta_key', VDSPF_POST_FORMAT);
-	   $query->set( 'meta_value', 'standard' );
+    	vd_cpf_set_postmeta_format($query, 'standard');
     }
 
 }
