@@ -6,19 +6,19 @@ include_once('functions.relatedposts.php');
 include_once('vd_consolidate_post_format.php');
 
 // disable jetpack css
-add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+// add_filter( 'jetpack_implode_frontend_css', '__return_false' );
 // disable admin bar
 // add_filter('show_admin_bar', '__return_false');
 
 // remove emojis
-remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
+// remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+// remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 // disable wp embeds
 function my_deregister_scripts(){
   wp_deregister_script( 'wp-embed' );
 }
-add_action( 'wp_footer', 'my_deregister_scripts' );
+//add_action( 'wp_footer', 'my_deregister_scripts' );
 
 // ADD POST FORMATS
 add_theme_support( 'post-formats',
