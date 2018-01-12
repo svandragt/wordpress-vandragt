@@ -219,7 +219,6 @@ h2 a {
 #menu-navigation ul,
 #menu-navigation li {
   list-style: none;
-  display: inline;
 }
 #menu-navigation a {
   display: block;
