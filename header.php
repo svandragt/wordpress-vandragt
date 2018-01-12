@@ -22,6 +22,7 @@
 				wp_nav_menu( array(
 					'theme_location' => 'primary',
 					'menu_class'     => 'primary-menu',
+					'depth'          => 2,
 				 ) );
 			?>
     </nav>
