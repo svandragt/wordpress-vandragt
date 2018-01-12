@@ -85,3 +85,35 @@ function vdspf_exclude_nonstandard_format( $query ) {
 
 }
 add_action( 'pre_get_posts', 'vdspf_exclude_nonstandard_format' );
+
+add_action('after_setup_theme', 'vd_create_pages');
+function vd_create_pages(){
+    $home_grouped_page_id = get_option("vd-home_grouped_page_id");
+    if ($home_grouped_page_id) {
+	    $page = get_page($home_grouped_page_id);
+	    if ($page) {
+	    	return;
+	    }
+    }
+
+
+    //create a new page and automatically assign the page template
+    $args = array(
+        'post_title' => "Home",
+        'post_content' => "",
+        'post_status' => "publish",
+        'post_type' => 'page',
+    );
+    $id = wp_insert_post($args, true);
+    if (is_wp_error($id)) {
+    	return;
+    }
+
+    update_post_meta($id, "_wp_page_template", "home-grouped.php");
+    update_option("vd-home_grouped_page_id", $id);
+
+    // Use a static front page
+	update_option( 'page_on_front',$id );
+	update_option( 'show_on_front', 'page' );
+
+}
