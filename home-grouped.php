@@ -4,7 +4,8 @@
     */
  get_header(); ?>
 
-	<div id="content" role="main" class="index">
+    <!--suppress HtmlUnknownTarget -->
+    <div id="content" role="main" class="index">
 		<?php
 		$category_posts = vd_posts_grouped_by_category(true);
 		foreach ($category_posts as $category => $posts):

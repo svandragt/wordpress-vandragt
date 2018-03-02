@@ -10,7 +10,8 @@
 		</div>
 		<?php endif; ?>
 
-		<p class="article-footer"><a href="/archives">Archives, search</a></p>
+        <p class="article-footer"><!--suppress HtmlUnknownTarget -->
+            <a href="/archives">Archives, search</a></p>
 	</div>
 
 

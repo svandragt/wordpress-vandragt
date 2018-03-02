@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="<?php bloginfo('language'); ?>">
+<!DOCTYPE html><!--suppress HtmlUnknownTarget -->
+<html lang="<?php bloginfo('language'); ?>">
 <head>
   <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
   <meta name="viewport" content="width=device-width">

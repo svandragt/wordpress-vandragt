@@ -52,6 +52,7 @@ add_action( 'widgets_init', 'vd_widgets_init' );
 
 /**
  * Root categories widget
+ * @param $args
  */
 function vd_root_categories($args) {
    echo $args['before_widget'];
@@ -70,6 +71,7 @@ wp_register_sidebar_widget(
 );
 /**
  * Post Volume widget
+ * @param $args
  */
 function vd_post_volume($args) {
    echo $args['before_widget'];
