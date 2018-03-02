@@ -15,7 +15,7 @@
 
 			foreach ($posts as $post):
 				setup_postdata($post);
-				get_template_part( 'format.list', get_post_format() );
+                get_template_part('format/list', get_post_format());
 			endforeach;
 			print('</article>');
 		endforeach;

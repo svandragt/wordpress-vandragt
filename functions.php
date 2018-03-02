@@ -1,8 +1,8 @@
 <?php
 
-include_once('functions.categoryposts.php');
-include_once('functions.widgets.php');
-include_once('functions.relatedposts.php');
+include_once('functions/categoryposts.php');
+include_once('functions/widgets.php');
+include_once('functions/relatedposts.php');
 include_once('vd_consolidate_post_format.php');
 
 // disable jetpack css
