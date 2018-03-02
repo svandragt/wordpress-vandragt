@@ -8,7 +8,5 @@
 
 	</main>
 
-	<?php //get_sidebar( 'content-bottom' ); ?>
-
 <?php get_footer(); ?>
 
