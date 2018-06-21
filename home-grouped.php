@@ -4,9 +4,9 @@
     */
  get_header(); ?>
 
-	<div id="content" role="main" class="index">
+    <!--suppress HtmlUnknownTarget -->
+    <div id="content" role="main" class="index">
 		<?php
-		// todo group by category, then limit to only x per cat; keeping paging ok
 		$category_posts = vd_posts_grouped_by_category(true);
 		foreach ($category_posts as $category => $posts):
 			$category_id = get_cat_ID( $category);
@@ -15,7 +15,7 @@
 
 			foreach ($posts as $post):
 				setup_postdata($post);
-				get_template_part( 'format.list', get_post_format() );
+                get_template_part('format/list', get_post_format());
 			endforeach;
 			print('</article>');
 		endforeach;
