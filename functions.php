@@ -5,11 +5,10 @@ include_once('functions/widgets.php');
 include_once('functions/relatedposts.php');
 include_once('vd_consolidate_post_format.php');
 
-// disable wp embeds
-function my_deregister_scripts(){
-  wp_deregister_script( 'wp-embed' );
+function vd_excerpt_more( $more ) {
+    return ' &raquo;';
 }
-//add_action( 'wp_footer', 'my_deregister_scripts' );
+add_filter('excerpt_more', 'vd_excerpt_more');
 
 // ADD POST FORMATS
 add_theme_support( 'post-formats',
