@@ -131,3 +131,26 @@ function vd_create_archives(){
     update_post_meta($id, "_wp_page_template", "archives.php");
     update_option("vd-archives_page_id", $id);
 }
+
+
+add_filter( 'the_content', 'svd_the_content_status_link', 20 );
+/**
+ * Add a icon to the beginning of every post page.
+ *
+ * @uses is_single()
+ */
+function svd_the_content_status_link( $content ) {
+
+	if ( is_single() ) {
+		return $content;
+	}
+		// Add image to the beginning of each page
+		$content = sprintf(
+			'%s <a href="%s">#</a>',
+			$content,
+			get_permalink()
+		);
+
+	// Returns the content.
+	return $content;
+}
