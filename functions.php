@@ -139,7 +139,7 @@ function svd_the_content_status_link( $content ) {
 		return $content;
 	}
 
-	if ( 'status' !== get_post_type() ) {
+	if ( 'status' !== get_post_format() ) {
 		return $content;
 	}
 	// Add image to the beginning of each page
