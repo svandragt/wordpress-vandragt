@@ -142,14 +142,12 @@ function svd_the_content_status_link( $content ) {
 	if ( 'status' !== get_post_format() ) {
 		return $content;
 	}
-	// Add image to the beginning of each page
+//	strip the closing tag and add it back on
 	$content = sprintf(
 		'%s <a href="%s">#</a></p>',
-		substr( $content, 0, - 4 ),
+		substr( $content, 0, - 5 ),
 		get_permalink()
 	);
-
-	// Returns the content.
 	return $content;
 }
 add_filter( 'the_content', 'svd_the_content_status_link', 20 );
