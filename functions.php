@@ -133,24 +133,23 @@ function vd_create_archives(){
 }
 
 
-add_filter( 'the_content', 'svd_the_content_status_link', 20 );
-/**
- * Add a icon to the beginning of every post page.
- *
- * @uses is_single()
- */
 function svd_the_content_status_link( $content ) {
 
 	if ( is_single() ) {
 		return $content;
 	}
-		// Add image to the beginning of each page
-		$content = sprintf(
-			'%s <a href="%s">#</a>',
-			$content,
-			get_permalink()
-		);
+
+	if ( 'status' !== get_post_type() ) {
+		return $content;
+	}
+	// Add image to the beginning of each page
+	$content = sprintf(
+		'%s <a href="%s">#</a></p>',
+		substr( $content, 0, - 4 ),
+		get_permalink()
+	);
 
 	// Returns the content.
 	return $content;
 }
+add_filter( 'the_content', 'svd_the_content_status_link', 20 );
