@@ -38,7 +38,7 @@ body {
   width: 100%;
 }
 article h2:first-of-type {
-  margin-bottom: 1.25em;
+  margin-bottom: 0.25em;
 }
 #secondary {
   flex: 1;
@@ -62,7 +62,7 @@ body {
   padding: 0;
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 300;
-  line-height: 145%;
+  line-height: 150%;
   font-size: 1.25em;
 }
 a {
@@ -73,11 +73,13 @@ a:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 article {
-  padding: 0.5em 6em 2em;
+  padding: 0.5em 6em 1em;
 }
 article h2:first-of-type a {
   color: inherit;
   font-weight: inherit;
+  font-size: 0.5em;
+  /*! margin: 0; */
 }
 blockquote {
   font-style: normal;
@@ -114,11 +116,11 @@ h4,
 h5,
 h6 {
   font-family: 'Noto Serif JP', sans-serif;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: 700;
   line-height: 125%;
   color: black;
-  margin-bottom: 0;
+  margin: .25em 0;
 }
 img {
   border: 1px solid #e5e5e2;
