@@ -127,6 +127,10 @@ h6 {
   color: black;
   margin: .25em 0;
 }
+
+.format-list h2 {
+  font-size:1.25em;
+}
 img {
   border: 1px solid #e5e5e2;
 }
