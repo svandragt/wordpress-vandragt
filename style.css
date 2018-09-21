@@ -242,8 +242,7 @@ h2 a {
   text-decoration: none;
 }
 .about {
-  /* what */
-  margin: 1em;
+  margin: 0 1em 1em;
   padding: 2em 4em;
   border-top: 1px dashed #ccc;
   font-style: italic;
