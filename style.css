@@ -77,7 +77,7 @@ article {
 }
 
 article h2.category {
-  font-size:1em;
+  font-size:1em !important;
   font-variant: small-caps;
   opacity: 0.45;
 }
