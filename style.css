@@ -48,6 +48,7 @@ article h2:first-of-type {
   padding-right: 0.5em;
   min-width: 8em;
   max-width: 12em;
+  font-size: 75%;
 }
 #content {
   flex: 2;
@@ -136,14 +137,15 @@ pre {
 }
 #header {
   border-bottom: 1px solid #c9c9c6;
-  overflow: auto;
-  padding: 0 20px;
+  /*! overflow: auto; */
+  /*! padding: 0 20px; */
   z-index: 1;
+  /*! font-size: 75%; */
 }
 #header a {
   display: block;
   margin-right: 1em;
-  line-height: 48px;
+  /*! line-height: 48px; */
   color: #363635;
   text-shadow: 0 1px 0 #fff;
 }
@@ -164,6 +166,7 @@ h2 a {
 #nav {
   display: inline-block;
   z-index: 999;
+  display: block;
 }
 #nav * {
   display: inline;
@@ -179,7 +182,7 @@ h2 a {
   margin: 0;
 }
 #nav li {
-  display: inline-block;
+  display: block;
 }
 #nav li a {
   margin-right: 0;
@@ -220,7 +223,7 @@ h2 a {
 #menu-navigation a {
   display: block;
   padding: 0 0.5em;
-  line-height: 3em;
+  /*! line-height: 3em; */
   text-decoration: none;
 }
 .article-footer {
