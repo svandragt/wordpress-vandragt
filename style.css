@@ -1,10 +1,10 @@
 /*
-Theme Name: wordpress-vandragt 2015
+Theme Name: wordpress-vandragt
 Theme URI: https://github.com/svandragt/wordpress-vandragt
 Description: Theme for vandragt.com
 Author: pacifika (sander@vandragt.com)
 Author URI: http://vandragt.com/
-Version: 3.0.0
+Version: 3.0.1
 Tags: white, two-column, reponsive, post-format
 
 License:  All rights reserved
@@ -59,9 +59,10 @@ body {
   margin: 0;
   color: #363635;
   padding: 0;
-  line-height: 1.5em;
-  font-size: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 300;
+  line-height: 145%;
+  font-size: 1.25em;
 }
 a {
   transition: all 0.125s ease-out;
@@ -71,15 +72,7 @@ a:hover {
   background: rgba(255, 255, 255, 0.5);
 }
 article {
-  padding: 10px 40px 40px;
-}
-article h2:first-of-type {
-  font-size: 150%;
-  font-weight: 800;
-}
-article h2:first-of-type a {
-  color: inherit;
-  font-weight: inherit;
+  padding: 0.5em 6em 2em;
 }
 blockquote {
   font-style: normal;
@@ -115,10 +108,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1em;
-  margin: 1em 0 0.25em;
-  font-weight: bold;
-  line-height: 1.4em;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 2.25em;
+  font-weight: 700;
+  line-height: 125%;
+  color: black;
+  margin-bottom: 0;
 }
 img {
   border: 1px solid #e5e5e2;
