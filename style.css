@@ -75,10 +75,16 @@ a:hover {
 article {
   padding: 0.5em 6em 1em;
 }
+
+article h2.category {
+  font-size:1em;
+}
+article h2:first-of-type {
+    margin: 0.5em 0 0.25em;
+}
 article h2:first-of-type a {
   color: inherit;
   font-weight: inherit;
-  margin: 0.5em 0 0.25em;
 }
 blockquote {
   font-style: normal;
