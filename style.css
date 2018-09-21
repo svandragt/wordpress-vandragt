@@ -90,10 +90,10 @@ article h2:first-of-type a {
 }
 blockquote {
   font-style: normal;
-  border: 1px solid #c9c9c6;
+  border-left: 1px solid #c9c9c6;
   border-radius: 10px;
   font-size: 87.5%;
-  padding: 1em 1em 0;
+  padding: 10px 1em 1px;
   margin-left: 0;
 }
 code {
