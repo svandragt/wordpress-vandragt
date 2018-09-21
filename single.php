@@ -6,6 +6,7 @@
 
 	    <?php get_template_part( 'comments' ); ?>
 
+		<div class="about">VanDragt.com is a cllection and semi organised thought process on web, development and technology news by Sander van Dragt.</div>
 	</main>
 
 <?php get_footer(); ?>
