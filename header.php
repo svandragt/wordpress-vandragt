@@ -17,4 +17,17 @@
   <meta name="95912bf4b466264c68a97a19f004f07fc9eb2558" content="69167b4b93905e89932bf8ab9c907f85e9d12ca9" />
 </head>
 <body>
+    <div id="header">
+    <h1><a href="<?php bloginfo( 'url' ); ?>"><?php bloginfo('name'); ?></a></h1>
+    <nav id="nav">
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'primary',
+					'menu_class'     => 'primary-menu',
+					'depth'          => 2,
+				 ) );
+			?>
+    </nav>
+  </div>
+
   <div id="container" class="container">
