@@ -3,7 +3,8 @@
  * The template for the sidebar containing the main widget area
  */
 global $wp_registered_sidebars;
-if (false === empty($wp_registered_sidebars)):
+
+if (  is_active_sidebar( 'sidebar-1' )  || (is_active_sidebar( 'frontpage-1' ) && is_front_page())  ):
 ?>
 
 
