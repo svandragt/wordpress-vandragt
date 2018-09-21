@@ -74,6 +74,10 @@ a:hover {
 article {
   padding: 0.5em 6em 2em;
 }
+article h2:first-of-type a {
+  color: inherit;
+  font-weight: inherit;
+}
 blockquote {
   font-style: normal;
   border: 1px solid #c9c9c6;
