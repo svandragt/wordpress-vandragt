@@ -241,6 +241,15 @@ h2 a {
   /*! line-height: 3em; */
   text-decoration: none;
 }
+.about {
+  /* what */
+  margin: 1em;
+  padding: 2em 4em;
+  border-top: 1px dashed #ccc;
+  font-style: italic;
+  font-size: .875em;
+}
+
 .article-footer {
   padding: 30px;
 }
