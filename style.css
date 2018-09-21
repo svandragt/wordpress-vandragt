@@ -79,7 +79,6 @@ article {
 article h2.category {
   font-size:1em;
   font-variant: small-caps;
-  letter-spacing: em;
   opacity: 0.45;
 }
 article h2:first-of-type {
