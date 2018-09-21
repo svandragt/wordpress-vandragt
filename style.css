@@ -78,8 +78,7 @@ article {
 article h2:first-of-type a {
   color: inherit;
   font-weight: inherit;
-  /*! font-size: 0.5em; */
-  margin: 0;
+  margin: 0.5em 0 0.25em;
 }
 blockquote {
   font-style: normal;
